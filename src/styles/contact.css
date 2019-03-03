@@ -1,23 +1,22 @@
 .shadow-box {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 0;
+  top: 0;
+  top: 0;
+  bottom: 0;
   width: 100%;
   height: 100vh;
-  transform: translate(-50%, -50%);
   font-family: 'Alegreya Sans SC', sans-serif;
   overflow: hidden;
-  background-color: transparent;
 }
 
 .shadow-box .s-text {
   position: absolute;
   top: 40%;
-  left: 20%;
-  width: 60%;
+  left: 0;
+  width: 100%;
   margin: -40px 0 0 0;
   font-size: 80px;
-  /* text-transform: uppercase; */
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -29,8 +28,8 @@
 .shadow-box .s-wall {
   position: absolute;
   top: 40%;
-  left: 20%;
-  width: 60%;
+  left: 25%;
+  width: 50%;
   height: 40%;
   border-radius: 10px;
 }
@@ -43,22 +42,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: transparent;
+  align-items: center;
 }
 
 .shadow-box .s-wall p {
-  position: relative;
-  font-size: 20px;
-  text-align: center;
+  font-size: 22px;
   font-weight: bold;
   color: #A34D48;
-  margin: 20px auto;
+  margin: 0 auto;
   text-shadow: 0 0 1px black;
 }
 
-.shadow-box .s-wall p span,
-.shadow-box .s-wall p span a {
+.shadow-box .s-wall span,
+.shadow-box .s-wall span a {
+  margin-bottom: 15px;
   padding: 0 5px;
+  font-size: 18px;
   color: rgb(108, 121, 124);
   font-family: 'K2D', sans-serif;
   text-shadow: 0 0 1px black;
@@ -76,4 +75,5 @@
   width: 200%;
   height: 200%;
   pointer-events: none;
+  background-image: radial-gradient(circle closest-side, transparent 0, black 550px)
 }

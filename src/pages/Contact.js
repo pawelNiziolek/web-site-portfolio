@@ -1,13 +1,8 @@
 import React, { Component } from "react";
 import "../styles/contact.css";
-// import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Shadow = props => (
-  <div
-    className="shadow-box"
-    onMouseMove={props.mouseMove}
-    onTouchMove={props.touchMove}
-  >
+  <div className="shadow-box" onMouseMove={props.mouseMove}>
     <div className="s-box" style={{ boxShadow: props.styleBox }} />
     <p
       className="s-text"
@@ -18,26 +13,21 @@ const Shadow = props => (
       Skontaktuj się
     </p>
     <div className="s-wall">
-      <p>
-        email:
-        <span>pawel.r.niziolek@gmail.com</span>
-      </p>
-      <p>
-        gitHub:
-        <span>
-          <a
-            href="https://github.com/pawelNiziolek"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://github.com/pawelNiziolek
-          </a>
-        </span>
-      </p>
-      <p>
-        linkedIn: <span>Lorem ipsum dolor sit amet.</span>
-      </p>
+      <p>email: </p>
+      <span>pawel.r.niziolek@gmail.com</span>
+      <p>gitHub: </p>
+      <span>
+        <a
+          href="https://github.com/pawelNiziolek"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/pawelNiziolek
+        </a>
+      </span>
+      <p>linkedIn: </p> <span>Lorem ipsum dolor sit amet.</span>
     </div>
+    <div className="s-spot" style={{ backgroundPosition: props.styleSpot }} />
   </div>
 );
 
@@ -52,7 +42,7 @@ class Contact extends Component {
   d = "";
   styleText = "";
   styleBox = "";
-  boxProperty = "";
+  styleSpot = "";
 
   handleMouseMove = e => {
     this.setState({
@@ -64,6 +54,7 @@ class Contact extends Component {
     this.d = Math.round(Math.sqrt(this.xm * this.xm + this.ym * this.ym) / 5);
     this.styleText = `${-this.xm}px ${-this.ym}px ${this.d + 10}px black`;
     this.styleBox = `${-this.xm}px ${-this.ym}px ${this.d + 30}px black`;
+    this.styleSpot = `${this.xm}px ${this.ym}px`;
   };
 
   render() {
@@ -71,7 +62,6 @@ class Contact extends Component {
       <>
         <Shadow
           mouseMove={this.handleMouseMove}
-          touchMove={this.handleToucheMove}
           styleBox={this.styleBox}
           styleText={this.styleText}
           styleSpot={this.styleSpot}
