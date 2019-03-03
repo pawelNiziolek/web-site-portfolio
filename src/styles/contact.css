@@ -1,68 +1,79 @@
-.wrap-contact {
-  position: absolute;
-  top: 50%;
+.shadow-box {
+  position: fixed;
   left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100vh;
   transform: translate(-50%, -50%);
-  text-align: center;
   font-family: 'Alegreya Sans SC', sans-serif;
-  letter-spacing: 2px;
-  color: rgb(207, 192, 192);
+  overflow: hidden;
+  background-color: transparent;
 }
 
-.wrap-contact h1 {
-  font-size: 35px;
-  padding: 30px 0;
-  /* text-shadow: 0 0px 2px black, 7px 7px 7px rgb(72, 135, 150); */
-  /* animation: shadow 7s linear infinite; */
+.shadow-box .s-text {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 60%;
+  margin: -40px 0 0 0;
+  font-size: 80px;
+  /* text-transform: uppercase; */
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(145, 61, 57);
+  text-shadow: 0px -40px 18px black;
 }
 
-/* @keyframes shadow {
-  20% {
-    text-shadow: 0 0px 2px black, 7px 7px 5px#A34D48;
-  }
+.shadow-box .s-box,
+.shadow-box .s-wall {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 60%;
+  height: 40%;
+  border-radius: 10px;
+}
 
-  32% {
-    text-shadow: 0 0px 2px black, 7px 7px 10px rgb(72, 135, 150);
-  }
+.shadow-box .s-box {
+  box-shadow: 0px -40px 39px #000;
+}
 
-  50% {
-    text-shadow: 0 0px 2px black, 7px 7px 13px rgb(72, 135, 150);
-  }
+.shadow-box .s-wall {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
 
-  60% {
-    text-shadow: 0 0px 2px black, 7px 7px 7px #A34D48;
-  }
-
-  66% {
-    text-shadow: 0 0px 2px black, 7px 7px 4px rgb(72, 135, 150);
-  }
-
-  70% {
-    text-shadow: 0 0px 2px black, 7px 7px 9px rgb(72, 135, 150);
-  }
-
-  86% {
-    text-shadow: 0 0px 2px black, 7px 7px 13px rgb(129, 68, 65);
-  }
-} */
-
-.wrap-contact p {
+.shadow-box .s-wall p {
+  position: relative;
   font-size: 20px;
-  padding: 5px;
+  text-align: center;
   font-weight: bold;
   color: #A34D48;
+  margin: 20px auto;
+  text-shadow: 0 0 1px black;
 }
 
-.wrap-contact p span,
-.wrap-contact p span a {
+.shadow-box .s-wall p span,
+.shadow-box .s-wall p span a {
   padding: 0 5px;
-  font-weight: normal;
+  color: rgb(108, 121, 124);
   font-family: 'K2D', sans-serif;
-  color: rgb(207, 192, 192);
+  text-shadow: 0 0 1px black;
   text-decoration: none;
-  transition: .2s;
 }
 
-.wrap-contact p span a:hover {
-  text-shadow: 0 0 2px black, 5px 4px 4px rgb(72, 135, 150);
+.shadow-box .s-wall p a:hover {
+  text-shadow: 0 0 1px black, 5px 5px 4px black;
+}
+
+.shadow-box .s-spot {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
 }

@@ -1,3 +1,8 @@
+.menu {
+  position: relative;
+  z-index: 999;
+}
+
 .menu,
 .navigation ul,
 .navigation li {
@@ -19,8 +24,6 @@
   list-style: none;
 }
 
-
-
 .nav-home a {
   font-size: 24px;
 }
@@ -37,8 +40,8 @@
   margin: 0 10px;
   padding: 5px;
   transition: .25s;
+  background-color: transparent;
 }
-
 
 .nav-home a.active,
 .navigation a.active,
@@ -68,6 +71,7 @@
   width: 0%;
   border-bottom: 1px solid white;
 }
+
 
 /* --------------------------------------------- */
 /* klasa dla menu przy zmianie strony na contact*/
