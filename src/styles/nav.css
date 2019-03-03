@@ -1,0 +1,107 @@
+.menu,
+.navigation ul,
+.navigation li {
+  display: flex;
+}
+
+.menu {
+  justify-content: space-between;
+}
+
+.nav-home,
+.navigation {
+  margin: 20px;
+  font-size: 20px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+
+
+.nav-home a {
+  font-size: 24px;
+}
+
+.nav-home a:hover {
+  text-shadow: none;
+}
+
+.nav-home a,
+.navigation a {
+  color: white;
+  text-shadow: 0 0 2px black, 7px 6px 4px rgb(72, 135, 150);
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  transition: .25s;
+}
+
+
+.nav-home a.active,
+.navigation a.active,
+.navigation a:hover {
+  text-shadow: none;
+}
+
+.navigation a span {
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  border-bottom: 1px solid white;
+  transition: .25s;
+}
+
+.navigation a:hover span {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.navigation a.active span {
+  width: 0%;
+  border-bottom: 1px solid white;
+}
+
+.navigation a.active span:hover {
+  width: 0%;
+  border-bottom: 1px solid white;
+}
+
+/* --------------------------------------------- */
+/* klasa dla menu przy zmianie strony na contact*/
+.nav-home a.on-contact:hover {
+  text-shadow: none;
+}
+
+.nav-home a.on-contact,
+.navigation a.on-contact {
+  color: #E69076;
+  text-shadow: 0 0 2px black, 7px 6px 4px #A34D48;
+}
+
+.nav-home a.active.on-contact,
+.navigation a.active.on-contact,
+.navigation a:hover.on-contact {
+  text-shadow: none;
+}
+
+.navigation a.on-contact:hover span {
+  width: 100%;
+  border-bottom: 1px solid #E69076;
+}
+
+.navigation a.on-contact span {
+  display: block;
+  margin: 0 auto;
+  width: 0%;
+  border-bottom: 1px solid #E69076;
+  transition: .25s;
+}
+
+.navigation a.active.on-contact span,
+.navigation a.active.on-contact span:hover {
+  width: 0%;
+  border-bottom: 1px solid #E69076;
+}

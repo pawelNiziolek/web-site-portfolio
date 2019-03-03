@@ -1,0 +1,9 @@
+footer {
+  color: rgb(72, 135, 150);
+  padding: 5px;
+  font-size: 12px;
+}
+
+footer.on-contact {
+  color: #E69076;
+}

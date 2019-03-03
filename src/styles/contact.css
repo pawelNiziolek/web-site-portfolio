@@ -1,0 +1,68 @@
+.wrap-contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 2px;
+  color: rgb(207, 192, 192);
+}
+
+.wrap-contact h1 {
+  font-size: 35px;
+  padding: 30px 0;
+  /* text-shadow: 0 0px 2px black, 7px 7px 7px rgb(72, 135, 150); */
+  /* animation: shadow 7s linear infinite; */
+}
+
+/* @keyframes shadow {
+  20% {
+    text-shadow: 0 0px 2px black, 7px 7px 5px#A34D48;
+  }
+
+  32% {
+    text-shadow: 0 0px 2px black, 7px 7px 10px rgb(72, 135, 150);
+  }
+
+  50% {
+    text-shadow: 0 0px 2px black, 7px 7px 13px rgb(72, 135, 150);
+  }
+
+  60% {
+    text-shadow: 0 0px 2px black, 7px 7px 7px #A34D48;
+  }
+
+  66% {
+    text-shadow: 0 0px 2px black, 7px 7px 4px rgb(72, 135, 150);
+  }
+
+  70% {
+    text-shadow: 0 0px 2px black, 7px 7px 9px rgb(72, 135, 150);
+  }
+
+  86% {
+    text-shadow: 0 0px 2px black, 7px 7px 13px rgb(129, 68, 65);
+  }
+} */
+
+.wrap-contact p {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  color: #A34D48;
+}
+
+.wrap-contact p span,
+.wrap-contact p span a {
+  padding: 0 5px;
+  font-weight: normal;
+  font-family: 'K2D', sans-serif;
+  color: rgb(207, 192, 192);
+  text-decoration: none;
+  transition: .2s;
+}
+
+.wrap-contact p span a:hover {
+  text-shadow: 0 0 2px black, 5px 4px 4px rgb(72, 135, 150);
+}
