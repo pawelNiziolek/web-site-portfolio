@@ -1,0 +1,178 @@
+.wrap-start {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+.use {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  text-align: center;
+  color: rgb(240, 216, 216);
+  overflow: hidden;
+}
+
+.use p {
+  opacity: 1;
+  animation: showP 2s linear;
+}
+
+.use button {
+  position: relative;
+  width: 40%;
+  height: 20px;
+  margin: 15px auto;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px 3px black;
+  transition: opacity 2s, box-shadow .3s;
+}
+
+.use button:hover {
+  box-shadow: 0 0 13px 6px black;
+}
+
+@keyframes showP {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.use button.now {
+  background-color: rgba(121, 51, 48, 0.87);
+}
+
+
+
+.use button.future {
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+
+.chose-tech {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width: 100%;
+  height: 30%;
+  perspective: 800;
+}
+
+.wrap-tech {
+  width: 100%;
+  /* height: 100%; */
+  transition: 2s .5s;
+  transform-style: preserve-3d;
+  transform: translateZ(-150px);
+}
+
+.circle {
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: spin 30s 1.3s infinite linear;
+}
+
+.tech {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  box-shadow: 0 0 10px 2px rgb(59, 15, 1);
+  box-sizing: border-box;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "K2D", sans-serif;
+  font-size: 60px;
+  color: white;
+  background-color: rgba(121, 51, 48, 0.89);
+  transition: transform 2s 1.5s;
+  backface-visibility: visible;
+  background-position: center;
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+}
+
+.tech:hover {
+  background-color: rgba(76, 52, 70, 0.959);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+.circle .js {
+  transform: translateZ(380px);
+  background-image: url(../images/js.png);
+
+}
+
+.circle .react {
+  transform: rotateY(40deg) translateZ(380px);
+  background-image: url(../images/react.png);
+}
+
+.circle .css {
+  transform: rotateY(80deg) translateZ(380px);
+  background-image: url(../images/css.png);
+  background-size: auto 80%;
+}
+
+.circle .sass {
+  transform: rotateY(120deg) translateZ(380px);
+  background-image: url(../images/sass.png);
+}
+
+.circle .html {
+  transform: rotateY(160deg) translateZ(380px);
+  background-image: url(../images/html.png);
+}
+
+.circle .git {
+  transform: rotateY(200deg) translateZ(380px);
+  background-image: url(../images/git.png);
+}
+
+.circle .gimp {
+  transform: rotateY(-120deg) translateZ(380px);
+  background-image: url(../images/gimp.png);
+}
+
+.circle .node {
+  transform: rotateY(-80deg) translateZ(380px);
+  background-image: url(../images/nodejs.png);
+}
+
+.circle .mongo {
+  transform: rotateY(320deg) translateZ(380px);
+  background-image: url(../images/mongoDB.jpg);
+}
+
+.circle .node,
+.circle .mongo {
+  background-color: rgba(0, 0, 0, 0.788);
+  box-shadow: 0 0 8px 3px black;
+}

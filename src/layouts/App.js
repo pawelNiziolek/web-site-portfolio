@@ -10,11 +10,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="wrap-all on-contact">
+        <div className="wrap-all">
           <header className="wrap-menu">{<Nav />}</header>
-          <main>
-            <section>{<Page />}</section>
-          </main>
+          <main>{<Page />}</main>
           <footer>{<Footer />}</footer>
         </div>
       </Router>

@@ -6,7 +6,7 @@
   bottom: 0;
   width: 100%;
   height: 100vh;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   overflow: hidden;
 }
 
@@ -48,18 +48,16 @@
 .shadow-box .s-wall p {
   font-size: 22px;
   font-weight: bold;
-  color: #A34D48;
-  margin: 0 auto;
+  color: #a34d48;
   text-shadow: 0 0 1px black;
 }
 
 .shadow-box .s-wall span,
 .shadow-box .s-wall span a {
-  margin-bottom: 15px;
-  padding: 0 5px;
+  margin-bottom: 10px;
   font-size: 18px;
   color: rgb(108, 121, 124);
-  font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
   text-shadow: 0 0 1px black;
   text-decoration: none;
 }
@@ -75,5 +73,5 @@
   width: 200%;
   height: 200%;
   pointer-events: none;
-  background-image: radial-gradient(circle closest-side, transparent 0, black 550px)
+  background-image: radial-gradient(circle closest-side, transparent 0, black);
 }
