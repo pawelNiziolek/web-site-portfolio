@@ -10,7 +10,7 @@ font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .body {
-  background-color: #263547;
+  /* background-color: #263547; */
 }
 
 .wrap-all {
@@ -18,8 +18,7 @@ font-family: 'Alegreya Sans SC', sans-serif;
   flex-direction: column;
   min-height: 100vh;
   font-family: 'K2D', sans-serif;
-  /* background-color: #263547; */
-  background-image: radial-gradient(circle, #476994, #0f1925 75%)
+  background-color: #263547;
 }
 
 .on-contact {

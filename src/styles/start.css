@@ -1,117 +1,72 @@
 .wrap-start {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-
-
-.use {
-  display: flex;
-  width: 80%;
   justify-content: space-around;
-  text-align: center;
-  color: rgb(240, 216, 216);
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle, #476994, #0f1925 75%);
   overflow: hidden;
 }
 
-.use p {
-  opacity: 1;
-  animation: showP 2s linear;
-}
-
-.use button {
-  position: relative;
-  width: 40%;
-  height: 20px;
-  margin: 15px auto;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 0 0 8px 3px black;
-  transition: opacity 2s, box-shadow .3s;
-}
-
-.use button:hover {
-  box-shadow: 0 0 13px 6px black;
-}
-
-@keyframes showP {
-  0% {
-    opacity: 0;
-  }
-
-  60% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.use button.now {
-  background-color: rgba(121, 51, 48, 0.87);
-}
-
-
-
-.use button.future {
-  background-color: rgba(0, 0, 0, 0.678);
-}
-
-
-.chose-tech {
-  display: flex;
-  justify-content: space-around;
-}
+/* _____________________________________________ */
 
 .container {
   width: 100%;
-  height: 30%;
-  perspective: 800;
+  height: 80%;
+  perspective: 650;
+  flex-grow: 1;
 }
 
 .wrap-tech {
   width: 100%;
-  /* height: 100%; */
-  transition: 2s .5s;
+  height: 100%;
   transform-style: preserve-3d;
-  transform: translateZ(-150px);
+  transform: translateZ(-100px);
+  /* dla media pion */
+  /* transform: rotateY(90deg) rotateX(90deg) translateZ(-100px); */
+
+}
+
+.wrap-tech.active-now,
+.wrap-tech.active-future {
+  transform: translateZ(0);
 }
 
 .circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
   position: relative;
-  top: 120px;
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-  transform-style: preserve-3d;
-  animation: spin 30s 1.3s infinite linear;
-}
-
-.tech {
-  position: absolute;
-  height: 180px;
-  width: 180px;
-  box-shadow: 0 0 10px 2px rgb(59, 15, 1);
-  box-sizing: border-box;
-  border-radius: 12px;
   text-align: center;
-  font-family: "K2D", sans-serif;
-  font-size: 60px;
-  color: white;
-  background-color: rgba(121, 51, 48, 0.89);
-  transition: transform 2s 1.5s;
-  backface-visibility: visible;
-  background-position: center;
-  background-size: 80% auto;
-  background-repeat: no-repeat;
+  top: 30vh;
+  margin: 0 auto;
+  height: 23vh;
+  width: 23vh;
+  transform-style: preserve-3d;
+  animation: spin 30s .8s infinite linear;
+
+  /* ??? srodek widoczny ??? */
+  /* box-shadow: 0 0 10px 5px black; */
+  /* color: white;
+  font-size: 90px; */
 }
 
-.tech:hover {
-  background-color: rgba(76, 52, 70, 0.959);
+.circle.active-now,
+.circle.active-future {
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 70%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  animation: spin 0s;
+  font-size: 0px;
 }
 
 @keyframes spin {
@@ -124,55 +79,204 @@
   }
 }
 
-.circle .js {
-  transform: translateZ(380px);
-  background-image: url(../images/js.png);
-
+.tech {
+  position: absolute;
+  height: 23vh;
+  width: 23vh;
+  box-shadow: 0 0 10px 2px rgb(43, 10, 1);
+  border-radius: 12px;
+  background-color: rgba(121, 51, 48, 0.89);
+  backface-visibility: visible;
+  background-position: center;
+  background-size: 80% auto;
+  background-repeat: no-repeat;
+  animation: showCircle .8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-.circle .react {
-  transform: rotateY(40deg) translateZ(380px);
+@keyframes showCircle {
+  0% {
+    height: 2vh;
+    width: 2px;
+  }
+
+  60% {
+    height: 20vh;
+    width: 2px;
+  }
+}
+
+.tech.active-now {
+  position: initial;
+  transform: none;
+  height: 21vh;
+  width: 21vh;
+  margin: 3vh;
+  box-shadow: 10px 10px 30px 6px black;
+  transition: .2s;
+}
+
+.tech.active-now:hover {
+  transform: scale(1.2);
+}
+
+.tech.active-future {
+  display: none;
+  box-shadow: 10px 10px 30px 6px black;
+}
+
+.tech:hover {
+  background-color: rgba(252, 252, 252, 0.548);
+  box-shadow: 0 0 11px 4px rgb(5, 5, 5);
+}
+
+.js {
+  transform: rotateY(0deg) translateZ(380px);
+  background-image: url(../images/js.png);
+}
+
+.react {
+  transform:
+    rotateX(0deg) rotateY(40deg) translateZ(380px);
   background-image: url(../images/react.png);
 }
 
-.circle .css {
-  transform: rotateY(80deg) translateZ(380px);
+.css {
+  transform: rotateX(0deg) rotateY(80deg) translateZ(380px);
   background-image: url(../images/css.png);
   background-size: auto 80%;
 }
 
-.circle .sass {
-  transform: rotateY(120deg) translateZ(380px);
+.sass {
+  transform: rotateX(0deg) rotateY(120deg) translateZ(380px);
   background-image: url(../images/sass.png);
 }
 
-.circle .html {
-  transform: rotateY(160deg) translateZ(380px);
+.html {
+  transform: rotateX(0deg) rotateY(160deg) translateZ(380px);
   background-image: url(../images/html.png);
 }
 
-.circle .git {
-  transform: rotateY(200deg) translateZ(380px);
+.git {
+  transform: rotateX(0deg) rotateY(200deg) translateZ(380px);
   background-image: url(../images/git.png);
 }
 
-.circle .gimp {
-  transform: rotateY(-120deg) translateZ(380px);
+.gimp {
+  transform: rotateX(0deg) rotateY(-120deg) translateZ(380px);
   background-image: url(../images/gimp.png);
 }
 
-.circle .node {
-  transform: rotateY(-80deg) translateZ(380px);
+.node {
+  transform: rotateX(0deg) rotateY(-80deg) translateZ(380px);
+  /* dla media pion
+   transform: rotateX(270deg) rotateY(-91deg) translateZ(380px); */
   background-image: url(../images/nodejs.png);
 }
 
-.circle .mongo {
-  transform: rotateY(320deg) translateZ(380px);
+.mongo {
+  transform: rotateX(0deg) rotateY(-40deg) translateZ(380px);
   background-image: url(../images/mongoDB.jpg);
 }
 
-.circle .node,
-.circle .mongo {
-  background-color: rgba(0, 0, 0, 0.788);
+.node,
+.mongo {
+  background-color: rgb(15, 15, 15);
   box-shadow: 0 0 8px 3px black;
+}
+
+.node:hover,
+.mongo:hover {
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0 0 8px 3px black;
+}
+
+.node.active-now,
+.mongo.active-now {
+  display: none;
+  transition: .3s;
+}
+
+.tech.node.active-future,
+.tech.mongo.active-future {
+  display: flex;
+  position: initial;
+  transform: none;
+  height: 21vh;
+  width: 21vh;
+  margin: 3vw;
+  transition: .2s;
+}
+
+.tech.node.active-future:hover,
+.tech.mongo.active-future:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+
+
+
+/* ________________________________________________ */
+/* przyciski */
+
+.chose-tech {
+  display: flex;
+  justify-content: space-around;
+  margin: 2% auto;
+  flex-basis: 10vh;
+  width: 90%;
+}
+
+.chose-tech button {
+  padding: 9px;
+  width: 30%;
+  height: 80%;
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 16px;
+  letter-spacing: .5px;
+  color: rgb(240, 216, 216);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px 3px black;
+  transition: box-shadow .3s;
+  animation: showBtn 1s linear;
+  text-shadow: 0 0 2px black;
+}
+
+.chose-tech button span {
+  font-size: 12px;
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.chose-tech button.now {
+  background-color: rgb(121, 51, 48);
+  box-shadow: 0 0 4px 2px black, 10px 10px 30px 6px black;
+}
+
+.chose-tech button.now:hover {
+  box-shadow: 0 0 9px 2px black, 10px -10px 30px 6px black;
+}
+
+.chose-tech button.future {
+  background-color: rgba(0, 0, 0, 0.726);
+  box-shadow: 0 0 4px 2px black, -10px 10px 30px 6px black;
+}
+
+.chose-tech button.future:hover {
+  box-shadow: 0 0 9px 2px black, -10px -10px 30px 6px black;
 }
