@@ -8,7 +8,7 @@ const Nav = () => {
       <div className="menu">
         <div className="nav-home">
           <p>
-            <NavLink to="/" exact className="on-contac">
+            <NavLink to="/" exact>
               Start
             </NavLink>
           </p>
@@ -16,18 +16,18 @@ const Nav = () => {
         <nav className="navigation">
           <ul>
             <li>
-              <NavLink to="/about" className="on-contac">
+              <NavLink to="/about">
                 O mnie <span />
               </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" className="on-contac">
+              <NavLink to="/projects">
                 Projekty
                 <span />
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" className="on-contac">
+              <NavLink to="/contact">
                 Kontakt
                 <span />
               </NavLink>

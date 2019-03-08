@@ -1,0 +1,54 @@
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: -5;
+  overflow: hidden;
+  opacity: 0;
+  animation: visible 1.5s linear;
+}
+
+@keyframes visible {
+  0.001% {
+    opacity: 1;
+    z-index: 999;
+  }
+
+  80% {
+    opacity: 1;
+    z-index: 999;
+  }
+}
+
+.black-top,
+.black-bottom {
+  width: 102%;
+  height: 1vh;
+  background-color: #000;
+  box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+  animation: crt-black 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.white {
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgb(255, 255, 255);
+  height: 98vh;
+  width: 102%;
+  animation: crt-white 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes crt-white {
+  0.0001% {
+    height: 2vh;
+  }
+}
+
+@keyframes crt-black {
+  0.001% {
+    height: 49vh;
+  }
+}

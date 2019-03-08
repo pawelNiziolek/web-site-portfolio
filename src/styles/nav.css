@@ -20,6 +20,7 @@
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
+
 .navigation ul {
   list-style: none;
 }
@@ -44,7 +45,11 @@
 }
 
 .nav-home a.active,
-.navigation a.active,
+.navigation a.active {
+  text-shadow: none;
+  color: #E69076;
+}
+
 .navigation a:hover {
   text-shadow: none;
 }
@@ -75,7 +80,7 @@
 
 /* --------------------------------------------- */
 /* klasa dla menu przy zmianie strony na contact*/
-.nav-home a.on-contact:hover {
+/* .nav-home a.on-contact:hover {
   text-shadow: none;
 }
 
@@ -85,9 +90,9 @@
   text-shadow: 0 0 2px black, 7px 6px 4px #A34D48;
 }
 
-.nav-home a.active.on-contact,
-.navigation a.active.on-contact,
-.navigation a:hover.on-contact {
+.nav-home a.on-contact,
+.navigation a.on-contact,
+.navigation .on-contact {
   text-shadow: none;
 }
 
@@ -104,8 +109,8 @@
   transition: .25s;
 }
 
-.navigation a.active.on-contact span,
-.navigation a.active.on-contact span:hover {
+.navigation a.on-contact span,
+.navigation a.on-contact span:hover {
   width: 0%;
   border-bottom: 1px solid #E69076;
-}
+} */

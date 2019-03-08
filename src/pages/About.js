@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/pop-up.css";
+import PopUp from "../components/PopUp";
 
 const About = () => {
   return (
@@ -15,6 +17,7 @@ const About = () => {
           porro vitae placeat.
         </p>
       </div>
+      <PopUp />
     </>
   );
 };

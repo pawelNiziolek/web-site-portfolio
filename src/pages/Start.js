@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/start.css";
+import "../styles/pop-up.css";
+import PopUp from "../components/PopUp";
 
 const Home = props => {
   const { now, future, showFuture, showNow } = props;
@@ -143,14 +145,12 @@ class Start extends React.Component {
   };
 
   handleShowNow = () => {
-    console.log("klik");
     this.setState({
       now: !this.state.now,
       future: false
     });
   };
   handleShowFuture = () => {
-    console.log("klik2");
     this.setState({
       future: !this.state.future,
       now: false
@@ -167,6 +167,7 @@ class Start extends React.Component {
           now={now}
           future={future}
         />
+        <PopUp />
       </>
     );
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import PopUp from "../components/PopUp";
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
         <div>projekt 4</div>
         <div>projekt 5</div>
       </div>
+      <PopUp />
     </>
   );
 };

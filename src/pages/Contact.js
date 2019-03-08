@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/contact.css";
+import PopUp from "../components/PopUp";
 
 const Shadow = props => (
   <div className="shadow-box" onMouseMove={props.mouseMove}>
@@ -66,6 +67,7 @@ class Contact extends Component {
           styleText={this.styleText}
           styleSpot={this.styleSpot}
         />
+        <PopUp />
       </>
     );
   }

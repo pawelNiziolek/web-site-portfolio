@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Router>
         <div className="wrap-all">
-          <header className="wrap-menu">{<Nav />}</header>
+          <header>{<Nav />}</header>
           <main>{<Page />}</main>
           <footer>{<Footer />}</footer>
         </div>
