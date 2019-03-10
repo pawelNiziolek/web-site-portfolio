@@ -1,0 +1,58 @@
+.wrap-all-projects,
+.wrap-projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap-all-projects {
+  width: 80%;
+  margin: 100px auto 0;
+
+}
+
+.wrap-projects {
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-top: 10vh;
+}
+
+.project {
+  flex-basis: 22vw;
+  height: 22vw;
+  background-color: #fff;
+  margin: 2%;
+  background-position: center center;
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.project:hover {
+  /* transform: scale(1.1); */
+  background-size: 100% 100%;
+}
+
+.project.one {
+  background-image: url(../images/beauty.png);
+}
+
+.project.two {
+  background-image: url(../images/memory.png);
+}
+
+.project.three {
+  background-image: url(../images/pogoda.png);
+}
+
+.project.four {
+  background-image: url(../images/slotmachine.png);
+}
+
+.project.five {
+  background-image: url(../images/to-do.png);
+}
+
+.project.six {
+  background-image: url(../images/gasstation.png);
+}

@@ -5,7 +5,7 @@ const ShowPopUp = () => {
   return (
     <div className="pop-up">
       <div className="black-top" />
-      <div className="white" />
+      <div className="middle" />
       <div className="black-bottom" />
     </div>
   );
