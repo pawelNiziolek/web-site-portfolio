@@ -1,0 +1,32 @@
+.wrap-all-projects,
+.wrap-projects {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.wrap-all-projects {
+  width: 85%;
+  /* min-height: 100vh; */
+  margin: 150px auto 0;
+}
+
+.wrap-projects {
+  position: relative;
+  bottom: 0;
+  padding: 5px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  perspective: 750;
+  animation: up 1.2s ease-out;
+}
+
+@keyframes up {
+  0% {
+    bottom: -150vh;
+  }
+
+  50% {
+    bottom: -150vh;
+  }
+}

@@ -1,0 +1,102 @@
+.project {
+  perspective: 600;
+  margin-bottom: 5%;
+  animation: rot 1.7s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotateX(-20deg) rotateY(10deg);
+    box-shadow: -6px 6px 8px 2px rgb(14, 14, 14);
+  }
+
+  60% {
+    transform: rotateX(-20deg) rotateY(10deg);
+    box-shadow: -6px 6px 8px 2px rgb(14, 14, 14);
+  }
+}
+
+.project-content,
+.front,
+.back {
+  width: 24vw;
+  height: 21vw;
+  transition: .4s;
+}
+
+.project-content:hover {
+  transform: rotateY(-15deg);
+  box-shadow: 6px 6px 8px 2px rgb(14, 14, 14);
+}
+
+.project-content.rotate {
+  transform: rotateY(180deg);
+}
+
+.project-content.rotate:hover {
+  transform: rotateY(195deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.front {
+  z-index: 2;
+  transition: .3s;
+}
+
+.front.rotate {
+  z-index: 0;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  background-color: #263547;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: .7px;
+  cursor: auto;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.back:hover {
+  background-color: #221D27;
+}
+
+.back.rotate:hover {
+  transform: rotateX(-10deg);
+}
+
+.front.one {
+  background-image: url(../images/beauty.png);
+}
+
+.front.two {
+  background-image: url(../images/memory.png);
+}
+
+.front.three {
+  background-image: url(../images/pogoda.png);
+}
+
+.front.four {
+  background-image: url(../images/slotmachine.png);
+}
+
+.front.five {
+  background-image: url(../images/to-do.png);
+}
+
+.front.six {
+  background-image: url(../images/gasstation.png);
+}

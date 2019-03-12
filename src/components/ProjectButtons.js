@@ -1,11 +1,14 @@
 import React from "react";
-import "../styles/project-buttons.css";
 
 const ProjectButtons = props => {
   return (
     <div className="buttons">
-      <button onClick={props.BtnLive}>live</button>
-      <button onClick={props.BtnGitHub}>gitHub</button>
+      <a href={props.titleLive} target="_blank" rel="noopener noreferrer">
+        <button>live </button>
+      </a>
+      <a href={props.titleGit} target="_blank" rel="noopener noreferrer">
+        <button>GitHub</button>
+      </a>
     </div>
   );
 };
