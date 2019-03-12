@@ -56,20 +56,23 @@
   font-size: 18px;
   color: rgb(108, 121, 124);
   font-family: "K2D", sans-serif;
-  text-shadow: 0 0 1px black;
+  text-shadow: 0 0 5px black;
   text-decoration: none;
 }
 
-.shadow-box .s-wall p a:hover {
+.shadow-box .s-wall a:hover {
   text-shadow: 0 0 1px black, 5px 5px 4px black;
 }
 
-.shadow-box .s-spot {
+
+/* efekt latarki: */
+
+/* .shadow-box .s-spot {
   position: absolute;
   top: -50%;
   left: -50%;
   width: 200%;
   height: 200%;
   pointer-events: none;
-  /* background-image: radial-gradient(circle closest-side, transparent 0, black); */
-}
+  background-image: radial-gradient(circle closest-side, transparent 0, black);
+} */

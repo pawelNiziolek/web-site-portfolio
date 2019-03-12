@@ -9,6 +9,16 @@ font-family: 'Alegreya Sans SC', sans-serif;
   box-sizing: border-box;
 }
 
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
 .wrap-all {
   display: flex;
   flex-direction: column;

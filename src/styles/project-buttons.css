@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  outline: none;
+}
+
+.buttons button {
+  width: 40%;
+  padding: 5px 10px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 18px;
+  border: none;
+  color: white;
+  background-color: transparent;
+  box-shadow: 0 0 0 2px white;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: #E69076;
+  box-shadow: 0 0 0 2px #E69076;
+}

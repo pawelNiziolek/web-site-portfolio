@@ -1,36 +1,6 @@
 import React, { Component } from "react";
-import "../styles/contact.css";
+import ContactShadow from "../components/ContactShadow";
 import PopUp from "../components/PopUp";
-
-const Shadow = props => (
-  <div className="shadow-box" onMouseMove={props.mouseMove}>
-    <div className="s-box" style={{ boxShadow: props.styleBox }} />
-    <p
-      className="s-text"
-      style={{
-        textShadow: props.styleText
-      }}
-    >
-      Skontaktuj się
-    </p>
-    <div className="s-wall">
-      <p>email: </p>
-      <span>pawel.r.niziolek@gmail.com</span>
-      <p>gitHub: </p>
-      <span>
-        <a
-          href="https://github.com/pawelNiziolek"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://github.com/pawelNiziolek
-        </a>
-      </span>
-      <p>linkedIn: </p> <span>Lorem ipsum dolor sit amet.</span>
-    </div>
-    <div className="s-spot" style={{ backgroundPosition: props.styleSpot }} />
-  </div>
-);
 
 class Contact extends Component {
   state = {
@@ -43,7 +13,8 @@ class Contact extends Component {
   d = "";
   styleText = "";
   styleBox = "";
-  styleSpot = "";
+  // styleSpot = "";
+  // spot: dla efektu latarki
 
   handleMouseMove = e => {
     this.setState({
@@ -55,17 +26,17 @@ class Contact extends Component {
     this.d = Math.round(Math.sqrt(this.xm * this.xm + this.ym * this.ym) / 5);
     this.styleText = `${-this.xm}px ${-this.ym}px ${this.d + 10}px black`;
     this.styleBox = `${-this.xm}px ${-this.ym}px ${this.d + 30}px black`;
-    this.styleSpot = `${this.xm}px ${this.ym}px`;
+    // this.styleSpot = `${this.xm}px ${this.ym}px`;
   };
 
   render() {
     return (
       <>
-        <Shadow
+        <ContactShadow
           mouseMove={this.handleMouseMove}
           styleBox={this.styleBox}
           styleText={this.styleText}
-          styleSpot={this.styleSpot}
+          // styleSpot={this.styleSpot}
         />
         <PopUp />
       </>
