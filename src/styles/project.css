@@ -7,12 +7,12 @@
 
 @keyframes rot {
   0% {
-    transform: rotateX(-20deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(10deg);
     box-shadow: -6px 6px 8px 2px rgb(14, 14, 14);
   }
 
   60% {
-    transform: rotateX(-20deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(10deg);
     box-shadow: -6px 6px 8px 2px rgb(14, 14, 14);
   }
 }

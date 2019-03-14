@@ -1,4 +1,5 @@
 .chose-tech {
+  perspective: 800;
   display: flex;
   justify-content: space-around;
   margin: 2% auto;
@@ -21,6 +22,7 @@
   transition: box-shadow .3s;
   animation: showBtn 1.5s linear;
   text-shadow: 0 0 2px black;
+  transform-style: preserve-3d;
 }
 
 .chose-tech button span {

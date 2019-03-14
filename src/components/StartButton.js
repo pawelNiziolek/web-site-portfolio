@@ -2,13 +2,21 @@ import React from "react";
 import "../styles/start-button.css";
 
 const StartButton = props => {
-  const { now, future, showFuture, showNow } = props;
+  const { now, future, showFuture, showNow, mouseMove, style3dBtn } = props;
   return (
-    <div className="chose-tech">
-      <button className="now" onClick={showNow}>
+    <div className="chose-tech" onMouseMove={mouseMove}>
+      <button
+        style={{ transform: style3dBtn }}
+        className="now"
+        onClick={showNow}
+      >
         {now ? "Pokaż wszystkie" : "Technologie których używam"}
       </button>
-      <button className="future" onClick={showFuture}>
+      <button
+        style={{ transform: style3dBtn }}
+        className="future"
+        onClick={showFuture}
+      >
         {future ? (
           "Pokaż wszystkie"
         ) : (

@@ -3,11 +3,22 @@ import StartButton from "../components/StartButton";
 import "../styles/start-home.css";
 
 const StartHome = props => {
-  const { now, future, showFuture, showNow } = props;
+  const {
+    now,
+    future,
+    showFuture,
+    showNow,
+    mouseMove,
+    style3d,
+    style3dShow
+  } = props;
   return (
     <>
-      <div className="wrap-start">
+      <div className="wrap-start" onMouseMove={mouseMove}>
         <div
+          style={
+            now || future ? { transform: style3dShow } : { transform: style3d }
+          }
           className={
             now && future
               ? "container active-now"
@@ -118,7 +129,12 @@ const StartHome = props => {
             </div>
           </div>
         </div>
-        <StartButton showNow={showNow} showFuture={showFuture} />
+        <StartButton
+          showNow={showNow}
+          showFuture={showFuture}
+          mouseMove={props.mouseMove}
+          style3dBtn={props.style3dBtn}
+        />
       </div>
     </>
   );

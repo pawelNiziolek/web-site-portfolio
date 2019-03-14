@@ -29,7 +29,7 @@ class Projects extends Component {
         title: "three",
         text: "Weather App...",
         titleLive: "https://pawelniziolek.github.io/Weather-app-in-React/",
-        titleGit: "https://github.com/pawelNiziolek/Weather-app-in-React",
+        titleGit: "https://github.com/pawelNiziolek/Weather-app-React",
         active: false
       },
       {

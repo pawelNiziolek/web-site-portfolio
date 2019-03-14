@@ -8,11 +8,6 @@ class Contact extends Component {
     y: 0
   };
 
-  xm = "";
-  ym = "";
-  d = "";
-  styleText = "";
-  styleBox = "";
   // styleSpot = "";
   // spot: dla efektu latarki
 
@@ -26,6 +21,7 @@ class Contact extends Component {
     this.d = Math.round(Math.sqrt(this.xm * this.xm + this.ym * this.ym) / 5);
     this.styleText = `${-this.xm}px ${-this.ym}px ${this.d + 10}px black`;
     this.styleBox = `${-this.xm}px ${-this.ym}px ${this.d + 30}px black`;
+    this.style3d = `rotateY(${this.xm / 15}deg) rotateX(${this.ym / 10}deg)`;
     // this.styleSpot = `${this.xm}px ${this.ym}px`;
   };
 
@@ -36,6 +32,7 @@ class Contact extends Component {
           mouseMove={this.handleMouseMove}
           styleBox={this.styleBox}
           styleText={this.styleText}
+          style3d={this.style3d}
           // styleSpot={this.styleSpot}
         />
         <PopUp />

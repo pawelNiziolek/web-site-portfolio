@@ -6,9 +6,9 @@
 }
 
 .wrap-all-projects {
-  width: 85%;
-  /* min-height: 100vh; */
-  margin: 150px auto 0;
+  width: 100%;
+  padding: 10% 10% 5%;
+  perspective: 800;
 }
 
 .wrap-projects {
@@ -19,6 +19,7 @@
   flex-basis: 100%;
   perspective: 750;
   animation: up 1.2s ease-out;
+  transform-style: preserve-3d;
 }
 
 @keyframes up {
