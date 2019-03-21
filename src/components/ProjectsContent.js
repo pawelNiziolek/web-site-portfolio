@@ -7,10 +7,6 @@ class ProjectsContent extends Component {
     y: 0
   };
 
-  xm = "";
-  ym = "";
-  style3d = "";
-
   handleMouseMove = e => {
     this.setState({
       x: e.clientX,
@@ -18,8 +14,9 @@ class ProjectsContent extends Component {
     });
     this.xm = (this.state.x - Math.floor(window.innerWidth / 2)) * 0.4;
     this.ym = (this.state.y - Math.floor(window.innerHeight / 3)) * 0.4;
-    this.style3d = `rotateY(${this.xm / 40}deg) rotateX(${this.ym / 30}deg)`;
+    this.style3d = `rotateY(${this.xm / 50}deg) rotateX(${this.ym / 40}deg)`;
   };
+
   render() {
     const projects = this.props.projects.map(project => (
       <Project project={project} key={project.id} rotate={this.props.rotate} />

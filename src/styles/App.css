@@ -9,7 +9,6 @@ font-family: 'Alegreya Sans SC', sans-serif;
   box-sizing: border-box;
 }
 
-
 html {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -23,8 +22,9 @@ html::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'K2D', sans-serif;
-  background-image: linear-gradient(#A34D48, rgb(211, 128, 102), #A34D48);
+  font-family: "K2D", sans-serif;
+  background-image: linear-gradient(#a34d48, rgb(211, 128, 102), #a34d48);
+  /* background-color: #a34d48; */
 }
 
 .wrap-all main {

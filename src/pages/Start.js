@@ -19,7 +19,7 @@ class Start extends React.Component {
     this.ym = (this.state.y - Math.floor(window.innerHeight / 3)) * 0.03;
     this.style3d = `rotateY(${this.xm / 1000}deg) rotateX(${-this.ym}deg)`;
     this.style3dShow = `rotateY(${this.xm}deg) rotateX(${this.ym}deg)`;
-    this.style3dBtn = `rotateY(${this.xm}deg) rotateX(${this.ym * 1.5}deg)`;
+    this.style3dBtn = `rotateY(${-this.xm}deg) rotateX(${this.ym * 1.5}deg)`;
   };
 
   handleShowNow = () => {

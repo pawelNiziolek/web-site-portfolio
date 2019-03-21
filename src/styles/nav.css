@@ -15,7 +15,7 @@
 
 .nav-home,
 .navigation {
-  margin: 20px;
+  margin: 16px;
   text-transform: uppercase;
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 1px;
@@ -51,15 +51,17 @@
   border-bottom: 1px solid white;
 }
 
+a.active-about {
+  color: #42717C;
+  font-weight: bold;
+}
 
-
-a.active-about,
 a.active-contact {
   color: #E69076;
 }
 
 a.active-projects {
-  color: #263547;
+  color: #221D27;
   font-weight: bold;
 }
 
