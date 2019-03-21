@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/start-button.css";
 
 const StartButton = props => {
-  const { now, future, showFuture, showNow, mouseMove, style3dBtn } = props;
+  const { now, future, showFuture, showNow, style3dBtn } = props;
   return (
-    <div className="chose-tech" onMouseMove={mouseMove}>
+    <div className="chose-tech">
       <button
         style={{ transform: style3dBtn }}
         className="now"

@@ -1,32 +1,17 @@
 import React, { Component } from "react";
 
 class AboutWrap extends Component {
-  state = {};
+  state = {
+    text:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat tempora quas tenetur in voluptatibus, assumenda incidunt quod blanditiis explicabo quibusdam fugiat quae doloremque itaque iusto autem. Deserunt voluptatum accusamus ratione provident quas magnam cum. Quidem, accusantium fuga numquam sed expedita inventore dignissimos aliquid possimus culpa quibusdam? Quia illo animi ipsa ea modi fugit dolor quasi, nulla iure cum natus laboriosam nostrum ab distinctio sed eaque totam ad tempora! Obcaecati fugiat, accusamus architecto eligendi ab earum! Mollitia, repellendus ratione! Quia repellat nemo at quas accusantium sapiente eum, totam assumenda autem voluptas, voluptatibus, quam temporibus quidem aut doloremque! Sit adipisci nulla qui."
+  };
+
   render() {
+    const { text } = this.state;
     return (
       <div className="wrap-all-about">
-        <div className="about-text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            possimus porro fuga veritatis officiis, nisi, velit aspernatur
-            voluptatem corrupti minus corporis inventore. Quibusdam quidem omnis
-            architecto consequuntur excepturi quisquam officia?
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
-            ullam in deleniti ex et ipsam cupiditate nam eveniet nemo rerum cum
-            repudiandae iusto, rem quis adipisci aperiam perferendis ipsum
-            nesciunt.
-          </p>
-          <p>
-            <br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Doloribus nihil odit vitae pariatur blanditiis? Porro autem
-            necessitatibus eligendi cumque architecto nemo nobis voluptatibus
-            perspiciatis a, ipsam est vitae incidunt dolores?
-          </p>
-        </div>
         <div className="wrap-all-side">
+          <div className="about-text">{text}</div>
           <div className="about-left"> </div>
           <div className="about-right"> </div>
         </div>

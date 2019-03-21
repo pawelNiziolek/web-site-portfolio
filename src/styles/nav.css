@@ -52,17 +52,18 @@
 }
 
 a.active-about {
-  color: #42717C;
-  font-weight: bold;
+  color: rgb(97, 166, 182);
+  /* font-weight: bold; */
 }
 
 a.active-contact {
-  color: #E69076;
+  color: rgb(134, 145, 148);
+  /* font-weight: bold; */
 }
 
 a.active-projects {
-  color: #221D27;
-  font-weight: bold;
+  color: #E69076;
+  /* font-weight: bold; */
 }
 
 a.active-start span,

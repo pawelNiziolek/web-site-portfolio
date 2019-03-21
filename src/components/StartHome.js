@@ -3,21 +3,13 @@ import StartButton from "../components/StartButton";
 import "../styles/start-home.css";
 
 const StartHome = props => {
-  const {
-    now,
-    future,
-    showFuture,
-    showNow,
-    mouseMove,
-    style3d,
-    style3dShow
-  } = props;
+  const { now, future, showFuture, showNow, mouseMove, style3dShow } = props;
   return (
     <>
       <div className="wrap-start" onMouseMove={mouseMove}>
         <div
           style={
-            now || future ? { transform: style3dShow } : { transform: style3d }
+            now || future ? { transform: style3dShow } : { transform: "none" }
           }
           className={
             now && future
@@ -130,9 +122,10 @@ const StartHome = props => {
           </div>
         </div>
         <StartButton
+          now={now}
+          future={future}
           showNow={showNow}
           showFuture={showFuture}
-          mouseMove={props.mouseMove}
           style3dBtn={props.style3dBtn}
         />
       </div>
