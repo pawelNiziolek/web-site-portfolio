@@ -21,7 +21,6 @@
   cursor: pointer;
   transition: box-shadow .3s;
   animation: showBtn 1.5s linear;
-  /* text-shadow: 0 0 2px black; */
   transform-style: preserve-3d;
 }
 
