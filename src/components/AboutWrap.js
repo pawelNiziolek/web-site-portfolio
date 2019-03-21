@@ -11,7 +11,9 @@ class AboutWrap extends Component {
     return (
       <div className="wrap-all-about">
         <div className="wrap-all-side">
-          <div className="about-text">{text}</div>
+          <div className="about-text">
+            <p>{text}</p>
+          </div>
           <div className="about-left"> </div>
           <div className="about-right"> </div>
         </div>

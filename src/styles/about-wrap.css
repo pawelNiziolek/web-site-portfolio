@@ -32,11 +32,18 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  color: rgb(97, 166, 182);
-  font-size: 20px;
-  text-align: center;
+  /* color: rgb(97, 166, 182); */
+  text-align: justify;
   transform: rotateX(0deg) translateY(0) translateX(50%);
   animation: text 3s linear;
+}
+
+.about-text p {
+  display: inline-block;
+  font-size: 20px;
+  background: linear-gradient(180deg, rgb(202, 219, 245) 0%, rgb(97, 166, 182) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes text {
@@ -51,10 +58,6 @@
   70% {
     transform: rotateX(-110deg) translateY(-10%) translateX(50%)
   }
-}
-
-.about-text.active {
-  color: white;
 }
 
 .about-left {
