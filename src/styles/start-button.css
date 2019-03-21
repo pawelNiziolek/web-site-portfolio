@@ -1,5 +1,5 @@
 .chose-tech {
-  perspective: 800;
+  perspective: 800px;
   display: flex;
   justify-content: space-around;
   margin: 2% auto;
@@ -8,7 +8,7 @@
 }
 
 .chose-tech button {
-  padding: 9px;
+  /* padding: 9px; */
   width: 30%;
   height: 80%;
   text-align: center;
@@ -17,11 +17,11 @@
   letter-spacing: .6px;
   color: rgb(255, 255, 255);
   border: none;
-  outline: none;
   cursor: pointer;
   transition: box-shadow .3s;
   animation: showBtn 1.5s linear;
   transform-style: preserve-3d;
+  outline: none;
 }
 
 .chose-tech button span {

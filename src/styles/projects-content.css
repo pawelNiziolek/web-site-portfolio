@@ -8,7 +8,7 @@
 .wrap-all-projects {
   width: 100%;
   padding: 10% 10% 5%;
-  perspective: 800;
+  perspective: 800px;
 }
 
 .wrap-projects {
@@ -17,7 +17,7 @@
   padding: 5px;
   flex-wrap: wrap;
   flex-basis: 100%;
-  perspective: 750;
+  perspective: 750px;
   animation: up 1.2s ease-out;
   transform-style: preserve-3d;
 }

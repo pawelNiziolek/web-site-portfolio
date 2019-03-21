@@ -54,17 +54,14 @@
 
 a.active-about {
   color: rgb(97, 166, 182);
-  /* font-weight: bold; */
 }
 
 a.active-contact {
   color: rgb(134, 145, 148);
-  /* font-weight: bold; */
 }
 
 a.active-projects {
   color: #E69076;
-  /* font-weight: bold; */
 }
 
 a.active-start span,

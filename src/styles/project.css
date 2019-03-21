@@ -1,5 +1,5 @@
 .project {
-  perspective: 600;
+  perspective: 700px;
   margin-bottom: 5%;
   animation: rot 1.7s ease-in-out;
   cursor: pointer;
@@ -7,12 +7,12 @@
 
 @keyframes rot {
   0% {
-    transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-10deg);
     box-shadow: -6px 6px 8px 2px rgb(14, 14, 14);
   }
 
   60% {
-    transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-10deg);
     box-shadow: -6px 6px 8px 2px rgb(14, 14, 14);
   }
 }
@@ -22,7 +22,7 @@
 .back {
   width: 24vw;
   height: 21vw;
-  transition: .4s;
+  transition: .3s;
 }
 
 .project-content:hover {

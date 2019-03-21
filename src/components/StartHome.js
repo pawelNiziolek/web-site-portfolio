@@ -118,6 +118,17 @@ const StartHome = props => {
                     : "tech mongo"
                 }
               />
+              <div
+                className={
+                  now
+                    ? "tech unknow active-now"
+                    : future
+                    ? "tech unknow active-future"
+                    : "tech unknow"
+                }
+              >
+                ?
+              </div>
             </div>
           </div>
         </div>
