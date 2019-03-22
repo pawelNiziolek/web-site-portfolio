@@ -90,7 +90,7 @@
   background-position: center;
   background-size: 80% auto;
   background-repeat: no-repeat;
-  animation: showCircle 1.1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: showCircle 1.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .tech:hover {

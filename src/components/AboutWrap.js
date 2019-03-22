@@ -14,8 +14,8 @@ class AboutWrap extends Component {
           <div className="about-text">
             <p>{text}</p>
           </div>
-          <div className="about-left"> </div>
-          <div className="about-right"> </div>
+          <div className="about-left" />
+          <div className="about-right" />
         </div>
       </div>
     );
