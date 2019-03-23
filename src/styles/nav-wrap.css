@@ -1,7 +1,7 @@
 .menu {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   z-index: 999;
   justify-content: space-between;
@@ -20,6 +20,7 @@
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 1px;
 }
+
 
 .navigation ul {
   list-style: none;
@@ -64,7 +65,6 @@ a.active-projects {
   color: #E69076;
 }
 
-a.active-start span,
 a.active-about span,
 a.active-contact span,
 a.active-projects span {
@@ -72,7 +72,6 @@ a.active-projects span {
   border-bottom: 1px solid white;
 }
 
-a.active-start:hover span,
 a.active-about:hover span,
 a.active-contact:hover span,
 a.active-projects:hover span {

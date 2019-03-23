@@ -71,7 +71,7 @@
   left: -27%;
   background-image: url(../images/about-left.png);
   background-position: right;
-  animation: go-left 2.5s ease-in-out, image-left 10s 5s linear infinite;
+  animation: go-left 2.5s ease-in-out, image-left 10s 3s linear infinite;
 }
 
 @keyframes image-left {
@@ -96,7 +96,7 @@
   right: -27%;
   background-image: url(../images/about-right.png);
   background-position: left;
-  animation: go-right 2.5s ease-in-out, image-right 10s 5s linear infinite;
+  animation: go-right 2.5s ease-in-out, image-right 10s 3s linear infinite;
 }
 
 @keyframes image-right {

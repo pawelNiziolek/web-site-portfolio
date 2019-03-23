@@ -1,0 +1,179 @@
+.media-home a,
+.show-hide {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  z-index: 99;
+}
+
+.media-home a {
+  left: 0;
+  margin: 10px 20px;
+  font-size: 27px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.show-hide {
+  display: flex;
+  right: 0;
+  margin: 20px;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+}
+
+.show span {
+  width: 30px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+span.s-one.go {
+  transform: translateY(10px) rotate(-45deg);
+  animation: go-one .6s 2s ease-out;
+}
+
+span.s-two.go {
+  transform: translateY(0) rotate(0);
+  width: 0px;
+  animation: go-two .6s 2s ease-out;
+}
+
+span.s-three.go {
+  transform: translateY(-10px) rotate(45deg);
+  animation: go-three .6s 2s ease-out;
+}
+
+span.s-one.out {
+  transform: translateY(0) rotate(0);
+  animation: out-one .6s 2s ease-out;
+}
+
+span.s-two.out {
+  width: 30px;
+  animation: out-two .6s 2s ease-out;
+}
+
+span.s-three.out {
+  transform: translateY(0) rotate(0);
+  animation: out-three .6s 2s ease-out;
+}
+
+
+@keyframes go-one {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  100% {
+    transform: translateY(10px) rotate(-45deg);
+  }
+}
+
+@keyframes go-two {
+  0% {
+    width: 30px;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+    width: 0px;
+  }
+}
+
+@keyframes go-three {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+
+  100% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
+
+@keyframes out-one {
+  0% {
+    transform: translateY(10px) rotate(-45deg)
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0);
+  }
+}
+
+@keyframes out-two {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+    width: 30px;
+  }
+}
+
+@keyframes out-three {
+  0% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+
+
+
+.media-menu ul,
+.media-menu {
+  display: flex;
+  /* display: none; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.media-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #000;
+  z-index: 9;
+}
+
+.media-menu ul {
+  height: 40%;
+  text-align: center;
+}
+
+.media-menu li {
+  list-style: none;
+}
+
+.media-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.media-menu a.active-about span,
+.media-menu a.active-contact span,
+.media-menu a.active-projects span {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3px;
+  border-bottom: 1px solid white;
+}

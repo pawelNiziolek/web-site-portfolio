@@ -5,10 +5,10 @@
   margin: 2% auto;
   flex-basis: 10vh;
   width: 90%;
+  animation: showBtn 1.6s linear;
 }
 
 .chose-tech button {
-  /* padding: 9px; */
   width: 30%;
   height: 80%;
   text-align: center;
@@ -19,7 +19,7 @@
   border: none;
   cursor: pointer;
   transition: box-shadow .3s;
-  animation: showBtn 1.5s linear;
+  animation: showBtn 1.6s linear;
   transform-style: preserve-3d;
   outline: none;
 }
@@ -31,14 +31,14 @@
 @keyframes showBtn {
   0% {
     opacity: 0;
+    height: 2px;
+    font-size: 0px;
   }
 
-  40% {
+  80% {
     opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+    height: 2px;
+    font-size: 0px;
   }
 }
 
