@@ -8,6 +8,21 @@
   font-family: "Alegreya Sans SC", sans-serif;
   overflow: hidden;
   background-image: linear-gradient(rgb(21, 14, 27), rgb(54, 53, 56), rgb(21, 14, 27));
+  animation: show-me 1s linear;
+}
+
+@keyframes show-me {
+  0% {
+    opacity: 0
+  }
+
+  60% {
+    opacity: 0
+  }
+
+  60.1% {
+    opacity: 1
+  }
 }
 
 .shadow-box .s-text {

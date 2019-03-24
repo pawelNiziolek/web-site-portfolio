@@ -29,24 +29,24 @@
   width: 102%;
   height: 0vh;
   background-color: #000;
-  background-image: linear-gradient(black 99.5%, white);
-  animation: crt-black 1.8s ease-out;
+  background-image: linear-gradient(black 99%, white);
+  animation: crt-black 1.5s ease-out;
 }
 
 .black-bottom {
-  background-image: linear-gradient(white, black .5%);
+  background-image: linear-gradient(white, black 1%);
 }
 
 .middle {
   background-color: transparent;
   height: 100vh;
   width: 102%;
-  animation: crt-middle 1.8s ease-out;
+  animation: crt-middle 1.5s ease-out;
 }
 
 @keyframes crt-middle {
   0% {
-    height: 0vh;
+    height: 8vh;
   }
 
   40% {

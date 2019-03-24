@@ -1,40 +1,55 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavMedia = () => {
+const NavMedia = props => {
+  const { showHideHam, hamburgerActive } = props;
   return (
     <>
       <div className="media-home">
-        <NavLink to="/" exact activeClassName="active-start">
+        <NavLink
+          to="/"
+          exact
+          activeClassName="active-start"
+          onClick={hamburgerActive ? showHideHam : null}
+        >
           Start
         </NavLink>
-        <div className="show-hide">
-          <div className="show">
-            <span className="s-one out" />
-            <span className="s-two out" />
-            <span className="s-three out" />
-          </div>
-          {/* <div className="hide">
-            <span className="h-one" />
-            <span className="h-two" />
-          </div> */}
+        <div className="show" onClick={showHideHam}>
+          <span className={hamburgerActive ? "s-one go" : "s-one out"} />
+          <span className={hamburgerActive ? "s-two go" : "s-two out"} />
+          <span className={hamburgerActive ? "s-three go" : "s-three out"} />
         </div>
       </div>
-      <nav className="media-menu">
+      <nav className={hamburgerActive ? "media-menu" : "media-menu go"}>
         <ul>
           <li>
-            <NavLink to="/about" activeClassName="active-about">
+            <NavLink
+              to="/about"
+              className={hamburgerActive ? "a-ab on" : "a-ab off"}
+              activeClassName="active-about"
+              onClick={showHideHam}
+            >
               O mnie <span />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" activeClassName="active-projects">
+            <NavLink
+              to="/projects"
+              className={hamburgerActive ? "a-pr on" : "a-pr off"}
+              activeClassName="active-projects"
+              onClick={showHideHam}
+            >
               Projekty
               <span />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName="active-contact">
+            <NavLink
+              to="/contact"
+              className={hamburgerActive ? "a-co on" : "a-co off"}
+              activeClassName="active-contact"
+              onClick={showHideHam}
+            >
               Kontakt
               <span />
             </NavLink>
