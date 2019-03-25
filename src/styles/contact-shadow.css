@@ -8,7 +8,7 @@
   font-family: "Alegreya Sans SC", sans-serif;
   overflow: hidden;
   background-image: linear-gradient(rgb(21, 14, 27), rgb(54, 53, 56), rgb(21, 14, 27));
-  animation: show-me 1s linear;
+  animation: show-me .9s linear;
 }
 
 @keyframes show-me {
@@ -16,12 +16,8 @@
     opacity: 0
   }
 
-  60% {
+  99% {
     opacity: 0
-  }
-
-  60.1% {
-    opacity: 1
   }
 }
 
@@ -30,8 +26,8 @@
   top: 40%;
   left: 0;
   width: 100%;
-  margin: -40px 0 0 0;
-  font-size: 80px;
+  margin: -50px 0 0 0;
+  font-size: 100px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -44,9 +40,9 @@
 .shadow-box .s-wall {
   position: absolute;
   top: 40%;
-  left: 25%;
-  width: 50%;
-  height: 40%;
+  left: 26%;
+  width: 48%;
+  height: 35%;
   transform-style: preserve-3d;
 }
 
@@ -63,18 +59,17 @@
 }
 
 .shadow-box .s-wall p {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   color: #a34d48;
   text-shadow: 0 0 1px black;
-
 }
 
 .shadow-box .s-wall span,
 .shadow-box .s-wall span a {
   margin-bottom: 10px;
-  font-size: 18px;
-  color: rgb(108, 121, 124);
+  font-size: 24px;
+  color: rgb(123, 132, 134);
   font-family: "K2D", sans-serif;
   text-shadow: 0 0 5px black;
   text-decoration: none;

@@ -13,7 +13,7 @@
   height: 80%;
   text-align: center;
   font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   letter-spacing: .6px;
   color: rgb(255, 255, 255);
   border: none;
@@ -25,7 +25,7 @@
 }
 
 .chose-tech button span {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @keyframes showBtn {

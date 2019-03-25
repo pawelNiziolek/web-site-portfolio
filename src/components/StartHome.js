@@ -1,6 +1,5 @@
 import React from "react";
 import StartButton from "../components/StartButton";
-import "../styles/start-home.css";
 
 const StartHome = props => {
   const { now, future, showFuture, showNow, mouseMove, style3dShow } = props;

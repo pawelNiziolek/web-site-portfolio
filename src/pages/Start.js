@@ -1,6 +1,8 @@
 import React from "react";
 import PopUp from "../components/PopUp";
 import StartHome from "../components/StartHome";
+import "../styles/start-home.css";
+import "../styles-media/start-home-media.css";
 
 class Start extends React.Component {
   state = {

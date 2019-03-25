@@ -1,20 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavMedia = props => {
-  const { showHideHam, hamburgerActive } = props;
+const NavMenuMedia = props => {
+  const { toogleHam, hamburgerActive } = props;
   return (
-    <>
+    <div className="menu-media">
       <div className="media-home">
         <NavLink
           to="/"
           exact
           activeClassName="active-start"
-          onClick={hamburgerActive ? showHideHam : null}
+          onClick={hamburgerActive ? toogleHam : null}
         >
           Start
         </NavLink>
-        <div className="show" onClick={showHideHam}>
+        <div className="show" onClick={toogleHam}>
           <span className={hamburgerActive ? "s-one go" : "s-one out"} />
           <span className={hamburgerActive ? "s-two go" : "s-two out"} />
           <span className={hamburgerActive ? "s-three go" : "s-three out"} />
@@ -27,7 +27,7 @@ const NavMedia = props => {
               to="/about"
               className={hamburgerActive ? "a-ab on" : "a-ab off"}
               activeClassName="active-about"
-              onClick={showHideHam}
+              onClick={toogleHam}
             >
               O mnie <span />
             </NavLink>
@@ -37,7 +37,7 @@ const NavMedia = props => {
               to="/projects"
               className={hamburgerActive ? "a-pr on" : "a-pr off"}
               activeClassName="active-projects"
-              onClick={showHideHam}
+              onClick={toogleHam}
             >
               Projekty
               <span />
@@ -48,7 +48,7 @@ const NavMedia = props => {
               to="/contact"
               className={hamburgerActive ? "a-co on" : "a-co off"}
               activeClassName="active-contact"
-              onClick={showHideHam}
+              onClick={toogleHam}
             >
               Kontakt
               <span />
@@ -56,8 +56,8 @@ const NavMedia = props => {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 
-export default NavMedia;
+export default NavMenuMedia;

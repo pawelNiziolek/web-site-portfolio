@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import "../styles/nav-wrap.css";
-import "../styles/nav-media.css";
-import "../styles/nav-media-home.css";
-// import NavWrap from "../components/NavWrap";
-import NavMedia from "../components/NavMedia";
+import "../styles/nav-home-hamburger.css";
+import "../styles/nav-menu-hamburger.css";
+import "../styles-media/nav-media.css";
+import NavWrap from "../components/NavWrap";
+import NavWrapMedia from "../components/NavWrapMedia";
 
 class Nav extends Component {
   state = {
@@ -20,11 +21,11 @@ class Nav extends Component {
     const { hamburgerActive } = this.state;
     return (
       <>
-        <NavMedia
+        <NavWrapMedia
           hamburgerActive={hamburgerActive}
-          showHideHam={this.handleToggleHamburger}
+          toogleHam={this.handleToggleHamburger}
         />
-        {/* <NavWrap /> */}
+        {<NavWrap />}
       </>
     );
   }

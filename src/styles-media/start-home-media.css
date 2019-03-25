@@ -1,0 +1,112 @@
+@media (max-width:1366px) and (orientation:landscape) {
+  .wrap-tech {
+    transform: translateZ(-100px);
+  }
+
+  .circle {
+    top: 36vh;
+    height: 23vh;
+    width: 23vh;
+  }
+
+  .tech {
+    height: 23vh;
+    width: 23vh;
+    line-height: 23vh;
+  }
+
+  .tech.active-now {
+    height: 21vh;
+    width: 21vh;
+  }
+
+  .tech.node.active-future,
+  .tech.mongo.active-future,
+  .tech.unknow.active-future {
+    height: 21vh;
+    width: 21vh;
+    line-height: 21vh;
+  }
+
+  .unknow {
+    font-size: 100px;
+  }
+
+  .chose-tech button {
+    font-size: 17px;
+  }
+
+  .chose-tech button span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:1366px) and (orientation:landscape) {
+  .circle {
+    height: 21vh;
+    width: 21vh;
+  }
+
+  .tech {
+    height: 21vh;
+    width: 21vh;
+    line-height: 21vh;
+  }
+}
+
+@media (max-width:820px) and (orientation:landscape) {
+  .wrap-tech {
+    transform: translateZ(-300px);
+  }
+
+  .circle {
+    top: 30vh;
+    height: 35vh;
+    width: 35vh;
+  }
+
+  .tech {
+    height: 35vh;
+    width: 35vh;
+    line-height: 35vh;
+  }
+
+  .unknow {
+    font-size: 70px;
+  }
+
+  .tech.active-now {
+    height: 25vh;
+    width: 25vh;
+  }
+
+  .tech.node.active-future,
+  .tech.mongo.active-future,
+  .tech.unknow.active-future {
+    height: 25vh;
+    width: 25vh;
+    line-height: 25vh;
+  }
+
+  .chose-tech {
+    margin: 0 auto 4%;
+  }
+
+  .chose-tech button {
+    width: 40%;
+    height: 100%;
+    font-size: 15px;
+  }
+
+  .chose-tech button span {
+    font-size: 10px;
+  }
+
+  .chose-tech button.now:hover {
+    box-shadow: 10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.future:hover {
+    box-shadow: -10px 10px 20px 3px black;
+  }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/contact-shadow.css";
 
 const ContactShadow = props => (
   <div className="shadow-box" onMouseMove={props.mouseMove}>

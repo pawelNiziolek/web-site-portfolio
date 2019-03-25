@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ContactShadow from "../components/ContactShadow";
 import PopUp from "../components/PopUp";
+import "../styles/contact-shadow.css";
+import "../styles-media/contact-shadow-media.css";
 
 class Contact extends Component {
   state = {

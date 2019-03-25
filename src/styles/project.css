@@ -20,6 +20,7 @@
 .project-content,
 .front,
 .back {
+  font-size: 20px;
   width: 24vw;
   height: 21vw;
   transition: .3s;

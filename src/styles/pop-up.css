@@ -29,31 +29,35 @@
   width: 102%;
   height: 0vh;
   background-color: #000;
-  background-image: linear-gradient(black 99%, white);
-  animation: crt-black 1.5s ease-out;
+  animation: crt-black 1.4s ease-out;
 }
 
-.black-bottom {
-  background-image: linear-gradient(white, black 1%);
-}
 
 .middle {
   background-color: transparent;
   height: 100vh;
   width: 102%;
-  animation: crt-middle 1.5s ease-out;
+  animation: crt-middle 1.4s ease-out;
 }
 
 @keyframes crt-middle {
   0% {
-    height: 8vh;
-  }
-
-  40% {
     height: 0vh;
   }
 
+  35% {
+    height: 0vh;
+  }
+
+  35.1% {
+    height: 8vh;
+  }
+
   70% {
+    height: 0vh;
+  }
+
+  90% {
     height: 100vh;
   }
 }
@@ -63,11 +67,11 @@
     height: 50vh;
   }
 
-  40% {
+  70% {
     height: 50vh;
   }
 
-  70% {
+  90% {
     height: 0vh;
   }
 }

@@ -1,0 +1,291 @@
+@media (max-width:1366px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    font-size: 80px;
+    line-height: 30px;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 24px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width:1280px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    font-size: 85px;
+    line-height: 14px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    height: 37%;
+  }
+
+
+  .shadow-box .s-wall p {
+    font-size: 32px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width:1024px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    font-size: 78px;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 30px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width:850px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    top: 30%;
+    font-size: 60px;
+    line-height: 30px;
+    text-shadow: 0px -35px 14px black;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 30%;
+    left: 17%;
+    width: 66%;
+    height: 60%;
+  }
+
+
+  .shadow-box .s-wall p {
+    line-height: 18px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 18px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width:720px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    top: 25%;
+    font-size: 55px;
+    line-height: 35px;
+    text-shadow: 0px -35px 13px black;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    height: 65%;
+  }
+}
+
+@media (max-width:650px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    top: 26%;
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 26%;
+    height: 58%;
+  }
+
+
+  .shadow-box .s-wall p {
+    font-size: 22px;
+    line-height: 12px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width:570px) and (orientation:landscape) {
+  .shadow-box .s-text {
+    top: 27%;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 27%;
+    height: 56%;
+  }
+
+
+  .shadow-box .s-wall p {
+    font-size: 18px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width:1024px) and (orientation:portrait) {
+  .shadow-box .s-text {
+    top: 40%;
+    font-size: 100px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 41%;
+    left: 18%;
+    width: 64%;
+    height: 25%;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 33px;
+    line-height: 18px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 15px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width:800px) and (orientation:portrait) {
+  .shadow-box .s-text {
+    font-size: 80px;
+    text-shadow: 0px -35px 14px black;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 40.5%;
+    left: 12%;
+    width: 76%;
+    height: 28%;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 32px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 18px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width:620px) and (orientation:portrait) {
+  .shadow-box .s-text {
+    font-size: 60px;
+    text-shadow: 0px -35px 14px black;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 40.5%;
+    left: 12%;
+    width: 76%;
+    height: 28%;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 24px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 15px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width:420px) and (orientation:portrait) {
+  .shadow-box .s-text {
+    top: 37%;
+    font-size: 50px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 36%;
+    left: 9%;
+    width: 82%;
+    height: 32%;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 25px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 20px;
+    font-size: 19px;
+  }
+}
+
+@media (max-width:375px) and (orientation:portrait) {
+  .shadow-box .s-text {
+    top: 37%;
+    font-size: 50px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 36%;
+    left: 7%;
+    width: 86%;
+    height: 33%;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 24px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 19px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width:330px) and (orientation:portrait) {
+  .shadow-box .s-text {
+    font-size: 42px;
+  }
+
+  .shadow-box .s-box,
+  .shadow-box .s-wall {
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    height: 38%;
+  }
+}

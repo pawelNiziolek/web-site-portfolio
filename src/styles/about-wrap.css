@@ -21,15 +21,11 @@
 
 @keyframes show-me {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
-  60% {
-    opacity: 0
-  }
-
-  60.1% {
-    opacity: 1
+  99% {
+    opacity: 0;
   }
 }
 
@@ -52,7 +48,7 @@
 }
 
 .about-text p {
-  font-size: 20px;
+  font-size: 25px;
   background: linear-gradient(180deg,
     rgb(97, 166, 182),
     rgb(194, 207, 226),
@@ -137,7 +133,7 @@
     left: 0;
   }
 
-  40% {
+  70% {
     left: 0;
   }
 }
@@ -147,7 +143,7 @@
     right: 0;
   }
 
-  40% {
+  70% {
     right: 0;
   }
 }
