@@ -79,12 +79,12 @@ a.a-ab.on {
 
 @keyframes ab-on {
   0% {
-    transform: rotateY(68deg);
+    transform: rotateY(68.3deg);
     color: black;
   }
 
   50% {
-    transform: rotateY(68deg);
+    transform: rotateY(68.3deg);
   }
 }
 
@@ -132,7 +132,7 @@ a.a-co.on {
 
 a.a-ab.off {
   transform-origin: 120%;
-  transform: rotateY(68deg);
+  transform: rotateY(68.3deg);
   animation: ab-off .3s ease-in-out;
   color: black;
 }
