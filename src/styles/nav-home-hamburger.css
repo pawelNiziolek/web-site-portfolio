@@ -1,9 +1,9 @@
 .media-home a,
 .show {
-  position: absolute;
+  position: fixed;
   top: 0;
   color: #fff;
-  z-index: 99;
+  z-index: 999;
   font-family: 'Alegreya Sans SC', sans-serif;
   outline: none;
 }

@@ -17,6 +17,7 @@
   letter-spacing: .7px;
   border: none;
   color: white;
+  text-shadow: 0 0 7px black;
   background-color: transparent;
   cursor: pointer;
   outline: none;

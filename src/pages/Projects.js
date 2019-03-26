@@ -4,6 +4,7 @@ import ProjectsContent from "../components/ProjectsContent";
 import "../styles/project.css";
 import "../styles/project-buttons.css";
 import "../styles/projects-content.css";
+import "../styles-media/projects-media.css";
 
 class Projects extends Component {
   state = {

@@ -1,0 +1,348 @@
+@media (max-width: 1366px) and (orientation: landscape) {
+  .wrap-tech {
+    transform: translateZ(-100px);
+  }
+
+  .circle {
+    top: 36vh;
+    height: 23vh;
+    width: 23vh;
+  }
+
+  .tech {
+    height: 23vh;
+    width: 23vh;
+    line-height: 23vh;
+  }
+
+  .tech.active-now {
+    height: 21vh;
+    width: 21vh;
+  }
+
+  .tech.node.active-future,
+  .tech.mongo.active-future,
+  .tech.unknow.active-future {
+    height: 21vh;
+    width: 21vh;
+    line-height: 21vh;
+  }
+
+  .unknow {
+    font-size: 100px;
+  }
+
+  .chose-tech button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+  .circle {
+    height: 21vh;
+    width: 21vh;
+  }
+
+  .tech {
+    height: 21vh;
+    width: 21vh;
+    line-height: 21vh;
+  }
+}
+
+@media (max-width: 1366px) and (orientation: landscape) {
+  .chose-tech button.now:hover {
+    box-shadow: 10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.future:hover {
+    box-shadow: -10px 10px 20px 3px black;
+  }
+}
+
+@media (max-width: 830px) and (orientation: landscape) {
+  .wrap-tech {
+    transform: translateZ(-270px);
+  }
+
+  .circle {
+    top: 30vh;
+    height: 36vh;
+    width: 36vh;
+  }
+
+  .tech {
+    height: 36vh;
+    width: 36vh;
+    line-height: 36vh;
+  }
+
+  .unknow {
+    font-size: 70px;
+  }
+
+  .tech.active-now {
+    height: 25vh;
+    width: 25vh;
+  }
+
+  .tech.node.active-future,
+  .tech.mongo.active-future,
+  .tech.unknow.active-future {
+    height: 25vh;
+    width: 25vh;
+    line-height: 25vh;
+  }
+
+  .chose-tech {
+    margin: 0 auto 4%;
+  }
+
+  .chose-tech button {
+    width: 40%;
+    height: 100%;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 570px) and (orientation: landscape) {
+  .wrap-tech {
+    transform: translateZ(-400px);
+  }
+
+  .circle {
+    top: 25vh;
+    height: 43vh;
+    width: 43vh;
+  }
+
+  .tech {
+    height: 43vh;
+    width: 43vh;
+    line-height: 43vh;
+  }
+
+  .unknow {
+    font-size: 90px;
+  }
+
+  .tech.unknow.active-future {
+    font-size: 70px;
+  }
+
+  .chose-tech button {
+    width: 42%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 536px) and (orientation: landscape) {
+  .wrap-tech {
+    transform: translateZ(-470px);
+  }
+
+  .tech.active-now {
+    height: 22vh;
+    width: 22vh;
+  }
+
+  .chose-tech button {
+    width: 42%;
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width:1024px) and (orientation:portrait) {
+  .wrap-start {
+    perspective: 1000px;
+  }
+
+  .wrap-tech {
+    transform: translateZ(100px);
+  }
+
+  .circle {
+    top: 42vh;
+    height: 15vh;
+    width: 15vh;
+  }
+
+  .tech {
+    height: 15vh;
+    width: 15vh;
+    line-height: 15vh;
+  }
+
+  .tech.active-now {
+    height: 15vh;
+    width: 15vh;
+    margin: 1vh;
+  }
+
+  .circle.active-future {
+    transform: translate(-50%, -34%);
+  }
+
+  .tech.node.active-future,
+  .tech.mongo.active-future,
+  .tech.unknow.active-future {
+    height: 15vh;
+    width: 15vh;
+    line-height: 15vh;
+  }
+
+  .unknow {
+    font-size: 140px;
+  }
+
+  .chose-tech {
+    perspective: 900px;
+    margin: 0 auto 6%;
+  }
+
+  .chose-tech button {
+    width: 33%;
+    height: 60%;
+    font-size: 18px;
+  }
+
+  .chose-tech button.now:hover {
+    box-shadow: 10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.future:hover {
+    box-shadow: -10px 10px 20px 3px black;
+  }
+}
+
+@media (max-width:801px) and (orientation:portrait) {
+  .wrap-start {
+    perspective: 800px;
+  }
+
+
+  .wrap-tech {
+    transform: translateZ(50px);
+  }
+
+  .circle {
+    top: 40vh;
+    height: 14vh;
+    width: 14vh;
+  }
+
+  .circle.active-now,
+  .circle.active-future {
+    width: 90%;
+  }
+
+  .tech {
+    height: 14vh;
+    width: 14vh;
+    line-height: 14vh;
+  }
+
+  .tech.node.active-future,
+  .tech.mongo.active-future,
+  .tech.unknow.active-future {
+    height: 16vh;
+    width: 16vh;
+    line-height: 16vh;
+  }
+
+  .chose-tech button {
+    width: 40%;
+    height: 50%;
+  }
+
+  .chose-tech button.now {
+    box-shadow: -10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.future {
+    box-shadow: 10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.now:hover {
+    box-shadow: -10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.future:hover {
+    box-shadow: 10px 10px 20px 3px black;
+  }
+}
+
+@media (max-width:780px) and (orientation:portrait) {
+  .wrap-tech {
+    transform: translateZ(0px);
+  }
+
+  .circle {
+    height: 16vh;
+    width: 16vh;
+  }
+
+  .tech {
+    height: 16vh;
+    width: 16vh;
+    line-height: 16vh;
+  }
+}
+
+@media (max-width:625px) and (orientation:portrait) {
+  .chose-tech button {
+    width: 47%;
+    height: 80%;
+    font-size: 17px;
+  }
+}
+
+@media (max-width:420px) and (orientation:portrait) {
+  .wrap-tech {
+    transform: translateZ(-30px);
+  }
+
+  .circle {
+    top: 38vh;
+    height: 19vh;
+    width: 19vh;
+  }
+
+  .circle.active-future {
+    top: 33vh;
+    flex-direction: column;
+  }
+
+  .tech {
+    height: 19vh;
+    width: 19vh;
+    line-height: 19vh;
+  }
+
+  .unknow {
+    font-size: 90px;
+  }
+
+  .tech.unknow.active-future {
+    font-size: 70px;
+  }
+
+  .chose-tech {
+    justify-content: space-between;
+  }
+
+  .chose-tech button {
+    width: 47%;
+    height: 80%;
+    font-size: 17px;
+  }
+
+  @media (max-width:350px) and (orientation:portrait) {
+    .chose-tech button {
+      width: 48%;
+      height: 100%;
+      font-size: 15px;
+    }
+  }
+}
