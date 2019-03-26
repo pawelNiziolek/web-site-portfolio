@@ -17,14 +17,7 @@ const StartButton = props => {
         className="future"
         onClick={showFuture}
       >
-        {future ? (
-          "Pokaż wszystkie"
-        ) : (
-          <p>
-            Technologie które chcę poznać <br />
-            <span> (w najbliższym czasie)</span>
-          </p>
-        )}
+        {future ? "Pokaż wszystkie" : <p>Technologie które chcę poznać</p>}
       </button>
     </div>
   );

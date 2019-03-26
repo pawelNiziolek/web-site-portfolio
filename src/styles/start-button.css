@@ -10,7 +10,7 @@
 
 .chose-tech button {
   width: 30%;
-  height: 80%;
+  height: 75%;
   text-align: center;
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: 22px;
@@ -22,10 +22,6 @@
   animation: showBtn 1.6s linear;
   transform-style: preserve-3d;
   outline: none;
-}
-
-.chose-tech button span {
-  font-size: 14px;
 }
 
 @keyframes showBtn {

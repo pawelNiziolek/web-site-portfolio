@@ -23,18 +23,18 @@
 
   .shadow-box .s-box,
   .shadow-box .s-wall {
-    height: 37%;
+    height: 40%;
   }
 
 
   .shadow-box .s-wall p {
-    font-size: 32px;
+    font-size: 29px;
   }
 
   .shadow-box .s-wall span,
   .shadow-box .s-wall span a {
-    margin-bottom: 20px;
-    font-size: 24px;
+    margin-bottom: 16px;
+    font-size: 21px;
   }
 }
 
@@ -73,6 +73,7 @@
 
 
   .shadow-box .s-wall p {
+    font-size: 26px;
     line-height: 18px;
   }
 
@@ -83,10 +84,10 @@
   }
 }
 
-@media (max-width:720px) and (orientation:landscape) {
+@media (max-width:740px) and (orientation:landscape) {
   .shadow-box .s-text {
     top: 25%;
-    font-size: 55px;
+    font-size: 58px;
     line-height: 35px;
     text-shadow: 0px -35px 13px black;
   }
@@ -96,7 +97,18 @@
     top: 25%;
     left: 15%;
     width: 70%;
-    height: 65%;
+    height: 60%;
+  }
+
+  .shadow-box .s-wall p {
+    font-size: 23px;
+    line-height: 12px;
+  }
+
+  .shadow-box .s-wall span,
+  .shadow-box .s-wall span a {
+    margin-bottom: 15px;
+    font-size: 19px;
   }
 }
 
@@ -112,18 +124,6 @@
     top: 26%;
     height: 58%;
   }
-
-
-  .shadow-box .s-wall p {
-    font-size: 22px;
-    line-height: 12px;
-  }
-
-  .shadow-box .s-wall span,
-  .shadow-box .s-wall span a {
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
 }
 
 @media (max-width:570px) and (orientation:landscape) {
@@ -138,7 +138,6 @@
     top: 27%;
     height: 56%;
   }
-
 
   .shadow-box .s-wall p {
     font-size: 18px;
@@ -201,7 +200,7 @@
   }
 }
 
-@media (max-width:620px) and (orientation:portrait) {
+@media (max-width:625px) and (orientation:portrait) {
   .shadow-box .s-text {
     font-size: 60px;
     text-shadow: 0px -35px 14px black;

@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   flex-basis: 100%;
   perspective: 750px;
-  animation: up 1.4s ease-out;
+  animation: up 1.6s ease-out;
   transform-style: preserve-3d;
 }
 
@@ -27,7 +27,7 @@
     bottom: -150vh;
   }
 
-  50% {
+  60% {
     bottom: -150vh;
   }
 }

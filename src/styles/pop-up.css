@@ -49,17 +49,15 @@
     height: 0vh;
   }
 
+
   35.1% {
     height: 8vh;
   }
 
-  70% {
+  65% {
     height: 0vh;
   }
 
-  90% {
-    height: 100vh;
-  }
 }
 
 @keyframes crt-black {
@@ -67,11 +65,7 @@
     height: 50vh;
   }
 
-  70% {
+  65% {
     height: 50vh;
-  }
-
-  90% {
-    height: 0vh;
   }
 }
