@@ -37,6 +37,7 @@
   letter-spacing: 1.5px;
   transition: .25s;
   outline: none;
+  cursor: pointer;
 }
 
 .navigation a {

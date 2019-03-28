@@ -10,23 +10,37 @@ import NavWrapMedia from "../components/NavWrapMedia";
 class Nav extends Component {
   state = {
     hamburgerActive: false
+    // hideMenu: false
   };
 
   handleToggleHamburger = () => {
     this.setState({
       hamburgerActive: !this.state.hamburgerActive
     });
+    console.log(window.innerWidth);
   };
 
+  // handleHideMenu = () => {
+  //   this.setState({ hideMenu: window.innerWidth < 767 });
+  // };
+
+  // componentDidMount() {
+  //   window.addEventListener("resize", this.handleHideMenu);
+  // }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener("resize", this.handleHideMenu);
+  // }
+
   render() {
-    const { hamburgerActive } = this.state;
+    const { hamburgerActive, hideMenu } = this.state;
     return (
       <>
         <NavWrapMedia
           hamburgerActive={hamburgerActive}
           toogleHam={this.handleToggleHamburger}
         />
-        {<NavWrap />}
+        <NavWrap />
       </>
     );
   }

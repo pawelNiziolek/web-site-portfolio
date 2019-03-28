@@ -12,8 +12,8 @@ class ProjectsContent extends Component {
       x: e.clientX,
       y: e.clientY
     });
-    this.xm = (this.state.x - Math.floor(window.innerWidth / 2)) * 0.4;
-    this.ym = (this.state.y - Math.floor(window.innerHeight / 3)) * 0.4;
+    this.xm = (this.state.x - Math.floor(window.innerWidth / 2)) * 0.2;
+    this.ym = (this.state.y - Math.floor(window.innerHeight / 2)) * 0.3;
     this.style3d = `rotateY(${this.xm / 50}deg) rotateX(${this.ym / 40}deg)`;
   };
 

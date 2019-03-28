@@ -45,7 +45,7 @@
 
   .about-text {
     width: 65%;
-    transform: rotateX(0deg) translateY(0) translateX(27%);
+    transform: rotateX(0deg) translateY(0) translateX(27%) !important;
   }
 
   @keyframes text {
@@ -66,11 +66,13 @@
     font-size: 15px;
   }
 
-  .about-left {
+  .about-left,
+  .under-left {
     left: -34%;
   }
 
-  .about-right {
+  .about-right,
+  .under-right {
     right: -34%;
   }
 }
@@ -101,7 +103,9 @@
 
   .about-text,
   .about-left,
-  .about-right {
+  .under-left,
+  .about-right,
+  .under-right {
     height: 60%;
   }
 
@@ -118,7 +122,7 @@
 
   .about-text {
     width: 65%;
-    transform: rotateX(0deg) translateY(0) translateX(27%);
+    transform: rotateX(0deg) translateY(0) translateX(27%) !important;
   }
 
   @keyframes text {
@@ -135,11 +139,13 @@
     }
   }
 
-  .about-left {
+  .about-left,
+  .under-left {
     left: -37%;
   }
 
-  .about-right {
+  .about-right,
+  .under-right {
     right: -37%;
   }
 }
@@ -155,17 +161,19 @@
     font-size: 17px;
   }
 
-  .about-left {
+  .about-left,
+  .under-left {
     left: -51%;
   }
 
-  .about-right {
+  .about-right,
+  .under-right {
     right: -51%;
   }
 
   .about-text {
     width: 85%;
-    transform: rotateX(0deg) translateY(0) translateX(9%);
+    transform: rotateX(0deg) translateY(0) translateX(9%) !important;
   }
 
   @keyframes text {

@@ -30,7 +30,9 @@ class AboutWrap extends Component {
       { img: right3 },
       { img: right4 }
     ],
-    index: 0
+    index: 0,
+
+    hide: true
   };
 
   handleChangeImages = () => {
@@ -47,7 +49,12 @@ class AboutWrap extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.interval = setInterval(this.handleChangeImages, 4000);
-    }, 5000);
+    }, 4000);
+    setTimeout(() => {
+      this.setState({
+        hide: false
+      });
+    }, 3000);
   }
 
   componentWillUnmount() {
@@ -55,31 +62,38 @@ class AboutWrap extends Component {
   }
 
   render() {
-    const { text, imagesLeft, imagesRight, index } = this.state;
+    const { text, imagesLeft, imagesRight, index, hide } = this.state;
+    const imgLeft = `url(${imagesLeft[index].img})`;
+    const imgRight = `url(${imagesRight[index].img})`;
+
     return (
-      <div className="wrap-all-about">
-        <div className="wrap-all-side">
-          <div className="about-text">
-            <p>{text}</p>
+      <>
+        <div className="wrap-all-about" onMouseMove={this.props.mouseMove}>
+          <div className="wrap-all-side">
+            <div
+              className="about-text"
+              style={{ transform: this.props.styleAbT }}
+            >
+              <p>{text}</p>
+            </div>
+            <div className="under-left" />
+            <div
+              className="about-left"
+              style={{
+                backgroundImage: imgLeft
+              }}
+            />
+            <div className="under-right" />
+            <div
+              className="about-right"
+              style={{
+                backgroundImage: imgRight
+              }}
+            />
           </div>
-          <div className="under-left" />
-          <div
-            className="about-left"
-            style={{
-              backgroundImage: `url(${imagesLeft[index].img})`,
-              opacity: 0.7
-            }}
-          />
-          <div className="under-right" />
-          <div
-            className="about-right"
-            style={{
-              backgroundImage: `url(${imagesRight[index].img})`,
-              opacity: 0.7
-            }}
-          />
         </div>
-      </div>
+        {hide ? <div className="wrap-all-hide" /> : null}
+      </>
     );
   }
 }

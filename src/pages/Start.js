@@ -17,10 +17,13 @@ class Start extends React.Component {
       x: e.clientX,
       y: e.clientY
     });
-    this.xm = (this.state.x - Math.floor(window.innerWidth / 3)) * 0.01;
-    this.ym = (this.state.y - Math.floor(window.innerHeight / 4)) * 0.03;
+    this.xm = (this.state.x - Math.floor(window.innerWidth / 2)) * 0.005;
+
+    this.ym = (this.state.y - Math.floor(window.innerHeight / 2)) * 0.01;
+
     this.style3dShow = `rotateY(${this.xm}deg) rotateX(${this.ym / 2}deg)`;
-    this.style3dBtn = `rotateY(${-this.xm}deg) rotateX(${this.ym / 2}deg)`;
+
+    this.style3dBtn = `rotateY(${-this.xm}deg) rotateX(${this.ym * 1.5}deg)`;
   };
 
   handleShowNow = () => {

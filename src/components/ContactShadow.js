@@ -30,7 +30,6 @@ const ContactShadow = props => (
       </span>
       <p>linkedIn: </p> <span>Lorem ipsum dolor sit amet.</span>
     </div>
-    {/* <div className="s-spot" style={{ backgroundPosition: props.styleSpot }} /> */}
   </div>
 );
 
