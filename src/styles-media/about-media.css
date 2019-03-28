@@ -8,7 +8,9 @@
 
   .about-text,
   .about-left,
-  .about-right {
+  .under-left,
+  .about-right,
+  .under-right {
     height: 80%;
   }
 
@@ -19,12 +21,6 @@
 
 @media (max-width:1280px) and (orientation:landscape) {
 
-  .about-text,
-  .about-left,
-  .about-right {
-    height: 80%;
-  }
-
   .about-text p {
     font-size: 22px;
   }
@@ -34,7 +30,9 @@
 
   .about-text,
   .about-left,
-  .about-right {
+  .under-left,
+  .about-right,
+  .under-right {
     height: 75%;
   }
 
@@ -44,12 +42,6 @@
 }
 
 @media (max-width:850px) and (orientation:landscape) {
-
-  .about-text,
-  .about-left,
-  .about-right {
-    height: 75%;
-  }
 
   .about-text {
     width: 65%;
@@ -87,7 +79,9 @@
 
   .about-text,
   .about-left,
-  .about-right {
+  .under-left,
+  .about-right,
+  .under-right {
     height: 70%;
   }
 
@@ -97,12 +91,6 @@
 }
 
 @media (max-width:570px) and (orientation:landscape) {
-
-  .about-text,
-  .about-left,
-  .about-right {
-    height: 70%;
-  }
 
   .about-text p {
     font-size: 12px;
@@ -123,12 +111,6 @@
 }
 
 @media (max-width:800px) and (orientation:portrait) {
-
-  .about-text,
-  .about-left,
-  .about-right {
-    height: 60%;
-  }
 
   .about-text p {
     font-size: 22px;

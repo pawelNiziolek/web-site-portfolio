@@ -32,7 +32,9 @@
 
 .about-text,
 .about-left,
-.about-right {
+.under-left,
+.about-right,
+.under-right {
   display: flex;
   height: 70%;
 }
@@ -72,21 +74,29 @@
 }
 
 .about-left,
-.about-right {
+.under-left,
+.about-right,
+.under-right {
   position: fixed;
   width: 50%;
   background-repeat: no-repeat;
   background-size: auto 100%;
+  transition: background-image 2.5s;
 }
 
-.about-left {
+.about-left,
+.under-left {
   left: -27%;
-  background-image: url(../images/about-left.png);
-  background-position: right;
-  animation: go-left 2.5s ease-in-out, image-left 10s 3s linear infinite;
+  background-position: right center;
+  animation: go-left 2.5s ease-in-out;
+  /* image-left 10s 3s linear infinite; */
 }
 
-@keyframes image-left {
+.under-left {
+  background-image: url(../images/about-left1.png);
+}
+
+/* @keyframes image-left {
   20% {
     background-image: url(../images/about-left1.png);
   }
@@ -102,16 +112,21 @@
   80% {
     background-image: url(../images/about-left4.png);
   }
-}
+} */
 
-.about-right {
+.about-right,
+.under-right {
   right: -27%;
-  background-image: url(../images/about-right.png);
-  background-position: left;
-  animation: go-right 2.5s ease-in-out, image-right 10s 3s linear infinite;
+  background-position: left center;
+  animation: go-right 2.5s ease-in-out;
+  /* image-right 10s 3s linear infinite; */
 }
 
-@keyframes image-right {
+.under-right {
+  background-image: url(../images/about-right1.png);
+}
+
+/* @keyframes image-right {
   20% {
     background-image: url(../images/about-right1.png);
   }
@@ -127,7 +142,7 @@
   80% {
     background-image: url(../images/about-right4.png);
   }
-}
+} */
 
 @keyframes go-left {
   0% {
