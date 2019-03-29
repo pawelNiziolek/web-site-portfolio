@@ -9,7 +9,7 @@ const ErrorWrap = () => {
       </video>
       <p>
         <span className="one">Chłopaki?</span>
-        <span className="two">Chłopaki!</span>
+        <span className="two">CHŁOPAKI!</span>
         <br />
         <span className="three">nic tu nie ma !</span>
       </p>
