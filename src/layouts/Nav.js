@@ -17,11 +17,10 @@ class Nav extends Component {
     this.setState({
       hamburgerActive: !this.state.hamburgerActive
     });
-    console.log(window.innerWidth);
   };
 
   // handleHideMenu = () => {
-  //   this.setState({ hideMenu: window.innerWidth < 767 });
+  //   this.setState({ hideMenu: window.innerWidth < 768 });
   // };
 
   // componentDidMount() {
@@ -33,7 +32,7 @@ class Nav extends Component {
   // }
 
   render() {
-    const { hamburgerActive, hideMenu } = this.state;
+    const { hamburgerActive /*hideMenu*/ } = this.state;
     return (
       <>
         <NavWrapMedia

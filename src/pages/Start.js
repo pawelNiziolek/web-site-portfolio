@@ -17,6 +17,7 @@ class Start extends React.Component {
       x: e.clientX,
       y: e.clientY
     });
+
     this.xm = (this.state.x - Math.floor(window.innerWidth / 2)) * 0.005;
 
     this.ym = (this.state.y - Math.floor(window.innerHeight / 2)) * 0.01;

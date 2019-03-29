@@ -13,7 +13,7 @@ class Projects extends Component {
         id: 1,
         title: "one",
         text:
-          "Beauty Story - moja pierwsza strona internetowa na przykładzie gabinetu kosmetologii estetycznej (html, css, JavaScript, jQuery)",
+          "Beauty Story - strona internetowa na przykładzie gabinetu kosmetologii estetycznej (html, css, JavaScript, jQuery)",
         titleLive: "https://pawelniziolek.github.io/First-website/index.html",
         titleGit: "https://github.com/pawelNiziolek/First-website",
         active: false

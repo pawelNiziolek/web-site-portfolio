@@ -1,0 +1,109 @@
+.error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(92, 79, 71), rgb(192, 190, 194));
+  overflow: hidden;
+}
+
+.error video,
+.error p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error video {
+  width: 100%;
+  height: auto;
+}
+
+.error p {
+  z-index: 2;
+  text-shadow: 0 0 10px white;
+}
+
+.error span.one {
+  font-size: 40px;
+  opacity: 0;
+  animation: scream-one 6.5s linear infinite;
+}
+
+.error span.two {
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0;
+  animation: scream-two 6.5s linear infinite;
+}
+
+.error span.three {
+  font-size: 45px;
+  font-weight: bold;
+  opacity: 0;
+  animation: scream-three 6.5s linear infinite;
+}
+
+@keyframes scream-one {
+  5% {
+    opacity: 0
+  }
+
+  5.01% {
+    opacity: 1;
+  }
+
+  18.99% {
+    opacity: 1;
+  }
+
+  19% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scream-two {
+  20% {
+    opacity: 0
+  }
+
+  20.01% {
+    opacity: 1;
+  }
+
+  44.99% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scream-three {
+  55% {
+    opacity: 0
+  }
+
+  55.01% {
+    opacity: 1;
+  }
+
+  79.99% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+  }
+}

@@ -54,7 +54,7 @@ class AboutWrap extends Component {
       this.setState({
         hide: false
       });
-    }, 3000);
+    }, 2850);
   }
 
   componentWillUnmount() {
@@ -63,17 +63,17 @@ class AboutWrap extends Component {
 
   render() {
     const { text, imagesLeft, imagesRight, index, hide } = this.state;
+
+    const { mouseMove, styleAbT } = this.props;
+
     const imgLeft = `url(${imagesLeft[index].img})`;
     const imgRight = `url(${imagesRight[index].img})`;
 
     return (
       <>
-        <div className="wrap-all-about" onMouseMove={this.props.mouseMove}>
+        <div className="wrap-all-about" onMouseMove={mouseMove}>
           <div className="wrap-all-side">
-            <div
-              className="about-text"
-              style={{ transform: this.props.styleAbT }}
-            >
+            <div className="about-text" style={{ transform: styleAbT }}>
               <p>{text}</p>
             </div>
             <div className="under-left" />

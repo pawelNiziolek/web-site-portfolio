@@ -23,6 +23,7 @@ html::-webkit-scrollbar {
   min-height: 100vh;
   font-family: "K2D", sans-serif;
   background-image: linear-gradient(#310b09, #8a3735, #310b09);
+  background-attachment: fixed;
 }
 
 .wrap-all main {

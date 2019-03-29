@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavWrap = props => {
+const NavWrap = () => {
   return (
     <div className="menu">
       <div className="nav-home">

@@ -23,7 +23,6 @@ class About extends Component {
 
     this.styleAboutText = `rotateY(${this.xm / 60}deg) rotateX(${this.ym /
       100}deg) translateY(0) translateX(50%)`;
-    console.log(window.innerWidth);
   };
 
   render() {

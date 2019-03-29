@@ -50,16 +50,6 @@
   }
 }
 
-@media (max-width: 1366px) and (orientation: landscape) {
-  .chose-tech button.now:hover {
-    box-shadow: 10px 10px 20px 3px black;
-  }
-
-  .chose-tech button.future:hover {
-    box-shadow: -10px 10px 20px 3px black;
-  }
-}
-
 @media (max-width: 830px) and (orientation: landscape) {
   .wrap-tech {
     transform: translateZ(-270px);
@@ -102,6 +92,14 @@
     width: 40%;
     height: 100%;
     font-size: 15px;
+  }
+
+  .chose-tech button.now:hover {
+    box-shadow: 10px 10px 20px 3px black;
+  }
+
+  .chose-tech button.future:hover {
+    box-shadow: -10px 10px 20px 3px black;
   }
 }
 

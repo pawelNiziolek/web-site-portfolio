@@ -3,6 +3,7 @@ import "../styles/start-button.css";
 
 const StartButton = props => {
   const { now, future, showFuture, showNow, style3dBtn } = props;
+
   return (
     <div className="chose-tech">
       <button
