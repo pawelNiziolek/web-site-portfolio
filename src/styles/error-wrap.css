@@ -23,7 +23,7 @@
 
 .error p {
   z-index: 2;
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 1px black, 0 0 10px white;
 }
 
 .error span.one {
