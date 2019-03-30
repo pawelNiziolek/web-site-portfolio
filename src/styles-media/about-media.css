@@ -6,38 +6,37 @@
 
 @media (max-width:1366px) and (orientation:landscape) {
 
-  .about-text,
+
   .about-left,
   .under-left,
   .about-right,
   .under-right {
-    height: 80%;
+    height: 80vh;
   }
 
   .about-text p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 @media (max-width:1280px) and (orientation:landscape) {
 
   .about-text p {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media (max-width:1024px) and (orientation:landscape) {
 
-  .about-text,
   .about-left,
   .under-left,
   .about-right,
   .under-right {
-    height: 75%;
+    height: 75vh;
   }
 
   .about-text p {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
 
@@ -45,25 +44,25 @@
 
   .about-text {
     width: 65%;
-    transform: rotateX(0deg) translateY(0) translateX(27%) !important;
+    transform: rotateX(0deg) translateY(0) !important;
   }
 
   @keyframes text {
     0% {
-      transform: rotateX(-130deg) translateY(-20%) translateX(27%);
+      transform: rotateX(-130deg) translateY(-20%);
     }
 
     40% {
-      transform: rotateX(-130deg) translateY(-20%) translateX(27%);
+      transform: rotateX(-130deg) translateY(-20%);
     }
 
     85% {
-      transform: rotateX(-90deg) translateY(-10%) translateX(27%);
+      transform: rotateX(-90deg) translateY(-10%);
     }
   }
 
   .about-text p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .about-left,
@@ -79,12 +78,11 @@
 
 @media (max-width:650px) and (orientation:landscape) {
 
-  .about-text,
   .about-left,
   .under-left,
   .about-right,
   .under-right {
-    height: 70%;
+    height: 70vh;
   }
 
   .about-text p {
@@ -101,12 +99,11 @@
 
 @media (max-width:1024px) and (orientation:portrait) {
 
-  .about-text,
   .about-left,
   .under-left,
   .about-right,
   .under-right {
-    height: 60%;
+    height: 6vh;
   }
 
   .about-text p {
@@ -117,25 +114,25 @@
 @media (max-width:800px) and (orientation:portrait) {
 
   .about-text p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .about-text {
     width: 65%;
-    transform: rotateX(0deg) translateY(0) translateX(27%) !important;
+    transform: rotateX(0deg) translateY(0) !important;
   }
 
   @keyframes text {
     0% {
-      transform: rotateX(-130deg) translateY(-20%) translateX(27%);
+      transform: rotateX(-130deg) translateY(-20%);
     }
 
     40% {
-      transform: rotateX(-130deg) translateY(-20%) translateX(27%);
+      transform: rotateX(-130deg) translateY(-20%);
     }
 
     85% {
-      transform: rotateX(-90deg) translateY(-10%) translateX(27%);
+      transform: rotateX(-90deg) translateY(-10%);
     }
   }
 
@@ -152,13 +149,13 @@
 
 @media (max-width:625px) and (orientation:portrait) {
   .about-text p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 @media (max-width:420px) and (orientation:portrait) {
   .about-text p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .about-left,
@@ -173,27 +170,27 @@
 
   .about-text {
     width: 85%;
-    transform: rotateX(0deg) translateY(0) translateX(9%) !important;
+    transform: rotateX(0deg) translateY(0) !important;
   }
 
   @keyframes text {
     0% {
-      transform: rotateX(-130deg) translateY(-20%) translateX(9%);
+      transform: rotateX(-130deg) translateY(-20%);
     }
 
     40% {
-      transform: rotateX(-130deg) translateY(-20%) translateX(9%);
+      transform: rotateX(-130deg) translateY(-20%);
     }
 
     85% {
-      transform: rotateX(-90deg) translateY(-10%) translateX(9%);
+      transform: rotateX(-90deg) translateY(-10%);
     }
   }
 }
 
 @media (max-width:375px) and (orientation:portrait) {
   .about-text p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 

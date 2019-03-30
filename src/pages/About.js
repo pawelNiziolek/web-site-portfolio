@@ -17,12 +17,12 @@ class About extends Component {
       y: e.clientY
     });
 
-    this.xm = (this.state.x - Math.floor(window.innerWidth) / 2) * 0.05;
+    this.xm = (this.state.x - Math.floor(window.innerWidth) / 2) * 0.02;
 
-    this.ym = (this.state.y - Math.floor(window.innerHeight) / 2) * 0.3;
+    this.ym = (this.state.y - Math.floor(window.innerHeight) / 2) * 0.1;
 
-    this.styleAboutText = `rotateY(${this.xm / 60}deg) rotateX(${this.ym /
-      100}deg) translateY(0) translateX(50%)`;
+    this.styleAboutText = `rotateY(${this.xm / 100}deg) rotateX(${this.ym /
+      200}deg)`;
   };
 
   render() {

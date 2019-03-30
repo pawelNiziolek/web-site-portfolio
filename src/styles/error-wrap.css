@@ -5,7 +5,7 @@
   width: 100%;
   height: 100vh;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   background-image: linear-gradient(rgb(65, 56, 51) 15%, rgb(192, 190, 194));
   overflow: hidden;
 }
@@ -20,29 +20,29 @@
 
 .error video {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .error p {
   z-index: 2;
-  text-shadow: 0 0 1px black, 0 0 10px white;
+  text-shadow: 0 0 10px white;
 }
 
 .error span.one {
-  font-size: 40px;
+  font-size: 45px;
   opacity: 0;
   animation: scream-one 6.5s linear infinite;
 }
 
 .error span.two {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: bold;
   opacity: 0;
   animation: scream-two 6.5s linear infinite;
 }
 
 .error span.three {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: bold;
   opacity: 0;
   animation: scream-three 6.5s linear infinite;

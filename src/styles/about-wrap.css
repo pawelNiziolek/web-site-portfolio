@@ -1,18 +1,23 @@
 .wrap-all-about,
 .wrap-all-hide {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  min-width: 100%;
+  min-height: 100vh;
   background-image: linear-gradient(rgb(0, 0, 0),
     rgb(39, 39, 39),
     rgb(0, 0, 0));
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 
 /* klasa dla zablokowania ruchu elementów przy wejsciu na strone */
 .wrap-all-hide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: none;
   z-index: 99999;
 }
@@ -21,7 +26,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  left: 0;
   width: 100%;
   height: 100%;
   perspective: 100px;
@@ -39,47 +43,56 @@
   }
 }
 
-.about-text,
-.about-left,
-.under-left,
-.about-right,
-.under-right {
-  display: flex;
-  height: 70%;
-}
-
 .about-text {
-  position: absolute;
   flex-direction: column;
   justify-content: space-around;
   width: 50%;
-  text-align: justify;
-  transform-origin: 100%;
-  transform: rotateX(0deg) rotateY(0deg) translateY(0) translateX(50%);
-  animation: text 2.6s linear;
-}
-
-.about-text p {
-  font-size: 28px;
+  margin: 10vh auto;
   background: linear-gradient(180deg,
     rgb(97, 166, 182),
     rgb(207, 219, 238),
     rgb(97, 166, 182));
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: text 2.6s linear;
 }
+
+.about-text p {
+  display: block;
+  font-size: 22px;
+  padding: .7% 0;
+  text-align: center;
+}
+
+p.text-zero,
+p.text-one,
+p.text-two {
+  text-align: center;
+}
+
+p.text-zero {
+  font-size: 50px;
+}
+
+p.text-one {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+
 
 @keyframes text {
   0% {
-    transform: rotateX(-130deg) rotateY(0deg) translateY(-20%) translateX(50%);
+    transform: rotateX(-130deg) rotateY(0deg) translateY(-20%);
   }
 
   40% {
-    transform: rotateX(-130deg) rotateY(0deg) translateY(-20%) translateX(50%);
+    transform: rotateX(-130deg) rotateY(0deg) translateY(-20%);
   }
 
   85% {
-    transform: rotateX(-90deg) rotateY(0deg) translateY(-10%) translateX(50%);
+    transform: rotateX(-90deg) rotateY(0deg) translateY(-10%);
   }
 }
 
@@ -87,7 +100,9 @@
 .under-left,
 .about-right,
 .under-right {
+  height: 70vh;
   position: fixed;
+  top: 10vh;
   width: 50%;
   background-repeat: no-repeat;
   background-size: auto 100%;
