@@ -17,7 +17,7 @@ class ProjectsContent extends Component {
 
     this.ym = (this.state.y - Math.floor(window.innerHeight / 2)) * 0.3;
 
-    this.style3d = `rotateY(${this.xm / 50}deg) rotateX(${this.ym / 40}deg)`;
+    this.style3d = `rotateY(${this.xm / 90}deg) rotateX(${this.ym / 70}deg)`;
   };
 
   render() {

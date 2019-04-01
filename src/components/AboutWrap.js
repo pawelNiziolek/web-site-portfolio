@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import left from "../images/about-left.png";
 import left1 from "../images/about-left1.png";
 import left2 from "../images/about-left2.png";
@@ -16,19 +18,18 @@ const textOne =
   " i długo szukałem pomysłu na siebie, czegoś co pozwoli mi się rozwijać i da satysfakcję a nie będzie jedynie wykonywaniem obowiązków.";
 
 const textTwo =
-  "Studia które skończyłem to Zarządzanie i Inżynieria produkcji oraz Towaroznawstwo na Uniwersytecie Ekonomicznym w Krakowie, w między czasie pracowałem w gastronomii jako barman, co nauczyło mnie niesamowitej cierpliwości w kontaktach z klientami i pracy zespołowej.";
+  'Studia które skończyłem to Zarządzanie i Inżynieria produkcji oraz Towaroznawstwo na Uniwersytecie Ekonomicznym w Krakowie, w między czasie pracowałem w gastronomii jako barman, co nauczyło mnie "niesamowitej" cierpliwości w kontaktach z klientami i pracy zespołowej.';
 
-const textThree =
-  "Studia nie do końca spełniły moje oczekiwania i wiedziałem, że muszę coś zmienić dlatego już w czasie ich trwania zrobiłem kurs zarządzania projektami i zacząłem się bardziej przyglądać branży IT i możliwościom jakie daje.";
+const textThree = `Studia nie do końca spełniły moje oczekiwania i wiedziałem, że muszę coś zmienić, dlatego już w czasie ich trwania zrobiłem kurs zarządzania projektami i zacząłem się bardziej przyglądać branży IT i możliwościom jakie daje.`;
 
 const textFour =
-  "Zawsze byłem osobą kreatywną i konsekwentną więc w  drugiej połowie 2018 roku zaczerpnąłem informacji od znajomych którzy już tam pracowali i wybrałem Front-end jako cel mojej nauki. Zrobiłem plan działania i postanowiłem się temu całkowicie poświęcić. Okazało się to strzałem w dziesiątkę. Od tego czasu, niemalże codziennie samodzielnie pogłębiam swoją wiedzę o programowaniu.";
+  "Zawsze byłem osobą kreatywną i konsekwentną, więc w  drugiej połowie 2018 roku zaczerpnąłem informacji od znajomych, którzy już pracowali jako programiści i wybrałem Front-end jako cel mojej nauki. Stworzyłem plan działania, zgromadziełm potrzebne materiały i zacząłem od podstaw( html -> css -> JavaScript -> React). Postanowiłem się temu całkowicie poświęcić i okazało się to strzałem w dziesiątkę. Od tego czasu, niemalże codziennie samodzielnie pogłębiam swoją wiedzę o programowaniu.";
 
 const textFive =
-  "Teraz gdy zajmuję się nowym projektem, uczę się czegoś nowego albo szukam rozwiązania problemu,zdarza sie, że dzień bywa zbyt krótki :) Podziwiam oryginalny design stron internetowych i aplikacji  oraz ich twórców i szukam pracy w zespole który pomoże mi rozwijać już nabyte umiejętności i nauczy wielu nowych.";
+  "Teraz gdy zajmuję się nowym projektem, uczę się nowej technologii albo szukam rozwiązania problemu, zdarza sie, że dzień bywa zbyt krótki :) Podziwiam oryginalny design stron internetowych i aplikacji  oraz ich twórców i szukam pracy w zespole, który pomoże mi rozwijać już nabyte umiejętności i nauczy wielu nowych.";
 
 const textSix =
-  "Co oprócz programowania? Jestem i w sumie zawsze byłem uzależniony od aktywności fizycznej a od 2 lat kalistenika jest moim faworytem i pomaga oczyścić umysł przed kolejnymi wyzwaniami Front-end-u. Lubię również nowinki technologiczne i jak widać po prawej stronie jestem fanem komiksów ";
+  "Co oprócz programowania? Jestem i w sumie zawsze byłem uzależniony od aktywności fizycznej a od 2 lat kalistenika jest moim faworytem i pomaga oczyścić umysł przed dalszym działaniem. Lubię również nowinki technologiczne i jak widać po prawej stronie jestem fanem komiksów ";
 
 class AboutWrap extends Component {
   state = {
@@ -95,15 +96,18 @@ class AboutWrap extends Component {
               <p className="text-one">{textOne}</p>
               <br />
               <p className="text-two">{textTwo}</p>
-              <p>{textThree}</p>
-              <p>{textFour}</p>
-              <p>{textFive}</p>
-              <p>
+              <p className="text-three">{textThree}</p>
+              <p className="text-four">{textFour}</p>
+              <p className="text-five">{textFive}</p>
+              <p className="text-six">
                 {textSix}
                 <img
                   src="https://img.icons8.com/ios/30/000000/batman-old.png"
                   alt="Batman icon by Icons8"
                 />
+              </p>
+              <p className="text-seven">
+                <Link to="/contact"> Zapraszam do kontaktu</Link>
               </p>
             </div>
           </div>

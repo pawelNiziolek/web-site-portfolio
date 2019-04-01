@@ -21,8 +21,8 @@ class About extends Component {
 
     this.ym = (this.state.y - Math.floor(window.innerHeight) / 2) * 0.1;
 
-    this.styleAboutText = `rotateY(${this.xm / 100}deg) rotateX(${this.ym /
-      200}deg)`;
+    this.styleAboutText = `rotateY(${this.xm / 50}deg) rotateX(${this.ym /
+      100}deg)`;
   };
 
   render() {
