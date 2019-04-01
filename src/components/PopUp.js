@@ -29,7 +29,8 @@ class PopUp extends React.Component {
   }
 
   render() {
-    return <>{this.state.visible ? <ShowPopUp /> : null}</>;
+    const { visible } = this.state;
+    return <>{visible ? <ShowPopUp /> : null}</>;
   }
 }
 

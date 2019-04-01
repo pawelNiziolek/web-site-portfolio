@@ -98,7 +98,7 @@ p.text-one {
   margin: 0 auto;
 }
 
-.about-text p.text-four {
+p.text-four {
   background-image: linear-gradient(90deg,
     rgb(116, 195, 212),
     rgb(235, 239, 245),
@@ -133,13 +133,12 @@ p.text-seven {
 p.text-seven a {
   font-size: 26px;
   text-decoration: none;
-  color: white;
-  text-shadow: 0px 0px 1px rgb(86, 125, 134);
+  -webkit-text-fill-color: rgb(132, 171, 179);
   transition: .4s;
 }
 
 p.text-seven a:hover {
-  text-shadow: 0px 0px 1px rgb(202, 202, 241);
+  -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
 .about-left,

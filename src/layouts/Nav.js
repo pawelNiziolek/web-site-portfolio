@@ -10,7 +10,6 @@ import NavWrapMedia from "../components/NavWrapMedia";
 class Nav extends Component {
   state = {
     hamburgerActive: false
-    // hideMenu: false
   };
 
   handleToggleHamburger = () => {
@@ -19,20 +18,8 @@ class Nav extends Component {
     });
   };
 
-  // handleHideMenu = () => {
-  //   this.setState({ hideMenu: window.innerWidth < 768 });
-  // };
-
-  // componentDidMount() {
-  //   window.addEventListener("resize", this.handleHideMenu);
-  // }
-
-  // componentWillUnmount() {
-  //   window.removeEventListener("resize", this.handleHideMenu);
-  // }
-
   render() {
-    const { hamburgerActive /*hideMenu*/ } = this.state;
+    const { hamburgerActive } = this.state;
     return (
       <>
         <NavWrapMedia
