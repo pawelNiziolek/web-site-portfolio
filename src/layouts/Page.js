@@ -10,10 +10,10 @@ const Page = () => {
   return (
     <>
       <Switch>
-        <Route path="./" exact component={Start} />
-        <Route path="./about" component={About} />
-        <Route path="./projects" component={Projects} />
-        <Route path="./contact" component={Contact} />
+        <Route path="./pages/" exact component={Start} />
+        <Route path="./pages/about" component={About} />
+        <Route path="./pages/projects" component={Projects} />
+        <Route path="./pages/contact" component={Contact} />
         <Route component={ErrorPages} />
       </Switch>
     </>
