@@ -47,16 +47,31 @@
   flex-direction: column;
   width: 50%;
   margin: 10vh auto;
-  background: linear-gradient(180deg,
-    rgb(97, 166, 182),
-    rgb(207, 219, 238),
-    rgb(97, 166, 182));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: text 2.6s linear;
 }
 
+
+@keyframes text {
+  0% {
+    transform: rotateX(-130deg) translateY(-20%);
+  }
+
+  40% {
+    transform: rotateX(-130deg) translateY(-20%);
+  }
+
+  85% {
+    transform: rotateX(-90deg) translateY(-10%);
+  }
+}
+
 .about-text p {
+  background-image: linear-gradient(90deg,
+    rgb(110, 194, 212),
+    rgb(226, 234, 247),
+    rgb(124, 171, 182));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: block;
   font-size: 21px;
   text-align: justify;
@@ -83,20 +98,26 @@ p.text-one {
   margin: 0 auto;
 }
 
+.about-text p.text-four {
+  background-image: linear-gradient(90deg,
+    rgb(116, 195, 212),
+    rgb(235, 239, 245),
+    rgb(219, 239, 255),
+    rgb(124, 191, 206));
+}
+
 p.text-four,
 p.text-five,
 p.text-six {
   padding-top: 20px;
 }
 
-p.text-four {
-  width: 90%;
-}
-
+p.text-four,
 p.text-six {
   width: 90%;
   margin: 0 auto;
 }
+
 
 p.text-six img {
   padding: 0 5px;
@@ -112,28 +133,13 @@ p.text-seven {
 p.text-seven a {
   font-size: 26px;
   text-decoration: none;
+  color: white;
   text-shadow: 0px 0px 1px rgb(86, 125, 134);
   transition: .4s;
 }
 
 p.text-seven a:hover {
   text-shadow: 0px 0px 1px rgb(202, 202, 241);
-}
-
-
-
-@keyframes text {
-  0% {
-    transform: rotateX(-130deg) rotateY(0deg) translateY(-20%);
-  }
-
-  40% {
-    transform: rotateX(-130deg) rotateY(0deg) translateY(-20%);
-  }
-
-  85% {
-    transform: rotateX(-90deg) rotateY(0deg) translateY(-10%);
-  }
 }
 
 .about-left,
