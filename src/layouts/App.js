@@ -9,7 +9,7 @@ import "../styles/App.css";
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <HashRouter basename="/">
         <div className="wrap-all">
           <header>{<Nav />}</header>
           <main>{<Page />}</main>
