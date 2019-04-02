@@ -231,7 +231,7 @@
   }
 }
 
-@media (max-width:900px) and (orientation:portrait) {
+@media (max-width:800px) and (orientation:portrait) {
 
   .about-text {
     width: 65%;
@@ -241,17 +241,17 @@
 
   @keyframes text {
     0% {
-      margin: -50vh auto;
-      transform: rotateX(-120deg) translateY(-15%);
+      margin: -60vh auto;
+      transform: rotateX(-110deg) translateY(-15%);
     }
 
     40% {
-      margin: -50vh auto;
-      transform: rotateX(-120deg) translateY(-15%);
+      margin: -60vh auto;
+      transform: rotateX(-110deg) translateY(-15%);
     }
 
     85% {
-      margin: -50vh auto;
+      margin: -60vh auto;
       transform: rotateX(-90deg) translateY(-5%);
     }
   }
