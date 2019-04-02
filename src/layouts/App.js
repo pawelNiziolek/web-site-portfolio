@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Nav from "./Nav";
-import Page from "./Page";
-import Footer from "./Footer";
+import Nav from "../layouts/Nav";
+import Page from "../layouts/Page";
+import Footer from "../layouts/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 import "../styles/App.css";
 
