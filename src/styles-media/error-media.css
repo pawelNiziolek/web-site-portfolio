@@ -1,14 +1,14 @@
 @media (max-width:625px) and (orientation:portrait) {
   .error span.one {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .error span.two {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .error span.three {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
