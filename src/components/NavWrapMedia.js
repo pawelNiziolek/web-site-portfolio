@@ -7,7 +7,7 @@ const NavMenuMedia = props => {
     <div className="menu-media">
       <div className="media-home">
         <NavLink
-          to={process.env.PUBLIC_URL + "/"}
+          to="/"
           exact
           activeClassName="active-start"
           onClick={hamburgerActive ? toogleHam : null}
@@ -24,7 +24,7 @@ const NavMenuMedia = props => {
         <ul>
           <li>
             <NavLink
-              to={process.env.PUBLIC_URL + "/about"}
+              to="/about"
               className={hamburgerActive ? "a-ab on" : "a-ab off"}
               activeClassName="active-about"
               onClick={toogleHam}
@@ -34,7 +34,7 @@ const NavMenuMedia = props => {
           </li>
           <li>
             <NavLink
-              to={process.env.PUBLIC_URL + "/projects"}
+              to="/projects"
               className={hamburgerActive ? "a-pr on" : "a-pr off"}
               activeClassName="active-projects"
               onClick={toogleHam}
@@ -45,7 +45,7 @@ const NavMenuMedia = props => {
           </li>
           <li>
             <NavLink
-              to={process.env.PUBLIC_URL + "/contact"}
+              to=
               className={hamburgerActive ? "a-co on" : "a-co off"}
               activeClassName="active-contact"
               onClick={toogleHam}

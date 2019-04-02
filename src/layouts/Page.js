@@ -10,14 +10,11 @@ const Page = () => {
   return (
     <>
       <Switch>
-        <Route path={process.env.PUBLIC_URL + "/"} exact component={Start} />
-        <Route path={process.env.PUBLIC_URL + "/about"} component={About} />
-        <Route
-          path={process.env.PUBLIC_URL + "/projects"}
-          component={Projects}
-        />
-        <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
-        <Route path={process.env.PUBLIC_URL + ""} component={ErrorPages} />
+        <Route path="/" exact component={Start} />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+        <Route component={ErrorPages} />
       </Switch>
     </>
   );
