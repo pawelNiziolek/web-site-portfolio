@@ -110,9 +110,7 @@ class AboutWrap extends Component {
                 />
               </p>
               <p className="text-seven">
-                <Link to={process.env.PUBLIC_URL + "/contact"}>
-                  Zapraszam do kontaktu
-                </Link>
+                <Link to="/contact">Zapraszam do kontaktu</Link>
               </p>
             </div>
           </div>

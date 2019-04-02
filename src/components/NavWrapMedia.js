@@ -45,7 +45,7 @@ const NavMenuMedia = props => {
           </li>
           <li>
             <NavLink
-              to=
+              to="/contact"
               className={hamburgerActive ? "a-co on" : "a-co off"}
               activeClassName="active-contact"
               onClick={toogleHam}
