@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import left from "../images/about-left.png";
 import left1 from "../images/about-left1.png";
@@ -108,9 +108,9 @@ class AboutWrap extends Component {
                 />
               </p>
               <p className="text-seven">
-                <Link to={process.env.PUBLIC_URL + "/contact"}>
+                <NavLink to={process.env.PUBLIC_URL + "/contact"}>
                   Zapraszam do kontaktu
-                </Link>
+                </NavLink>
               </p>
             </div>
           </div>
