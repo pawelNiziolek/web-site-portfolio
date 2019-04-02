@@ -50,7 +50,8 @@
   }
 }
 
-@media (max-width: 830px) and (orientation: landscape) {
+
+@media (max-width: 970px) and (orientation: landscape) {
   .wrap-tech {
     transform: translateZ(-270px);
   }
