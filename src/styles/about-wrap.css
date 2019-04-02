@@ -53,15 +53,15 @@
 
 @keyframes text {
   0% {
-    transform: rotateX(-130deg) translateY(-20%);
+    transform: rotateX(-150deg) translateY(-20%);
   }
 
   40% {
-    transform: rotateX(-130deg) translateY(-20%);
+    transform: rotateX(-150deg) translateY(-20%);
   }
 
   85% {
-    transform: rotateX(-90deg) translateY(-10%);
+    transform: rotateX(-100deg) translateY(-5%);
   }
 }
 
