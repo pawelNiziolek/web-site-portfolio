@@ -4,7 +4,7 @@ import ErrorWrap from "../components/ErrorWrap";
 import "../styles/error-wrap.css";
 import "../styles-media/error-media.css";
 
-const About = () => {
+const ErrorPages = () => {
   return (
     <>
       <ErrorWrap />
@@ -13,4 +13,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ErrorPages;
