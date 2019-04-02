@@ -231,7 +231,7 @@
   }
 }
 
-@media (max-width:801px) and (orientation:portrait) {
+@media (max-width:900px) and (orientation:portrait) {
 
   .about-text {
     width: 65%;
