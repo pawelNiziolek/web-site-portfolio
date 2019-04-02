@@ -7,9 +7,13 @@ import { HashRouter } from "react-router-dom";
 import "../styles/App.css";
 
 class App extends Component {
+  getConfirmation(message, callback) {
+    const allowTransition = window.confirm(message);
+    callback(allowTransition);
+  }
   render() {
     return (
-      <HashRouter basename="/">
+      <HashRouter getUserConfirmation={this.getConfirmation}>
         <div className="wrap-all">
           <header>{<Nav />}</header>
           <main>{<Page />}</main>

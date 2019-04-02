@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import left from "../images/about-left.png";
 import left1 from "../images/about-left1.png";
@@ -65,10 +65,10 @@ class AboutWrap extends Component {
   };
 
   componentDidMount() {
-    setTimeout(() => {
+    this.timeOutOne = setTimeout(() => {
       this.interval = setInterval(this.handleChangeImages, 4000);
     }, 4000);
-    setTimeout(() => {
+    this.timeOutTwo = setTimeout(() => {
       this.setState({
         hide: false
       });
@@ -76,6 +76,8 @@ class AboutWrap extends Component {
   }
 
   componentWillUnmount() {
+    clearTimeout(this.timeOutOne);
+    clearTimeout(this.timeOutTwo);
     clearInterval(this.interval);
   }
 
@@ -108,9 +110,9 @@ class AboutWrap extends Component {
                 />
               </p>
               <p className="text-seven">
-                <NavLink to={process.env.PUBLIC_URL + "/contact"}>
+                <Link to={process.env.PUBLIC_URL + "/contact"}>
                   Zapraszam do kontaktu
-                </NavLink>
+                </Link>
               </p>
             </div>
           </div>
