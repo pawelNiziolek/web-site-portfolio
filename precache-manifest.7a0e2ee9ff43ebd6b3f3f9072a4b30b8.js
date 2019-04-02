@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "bb91e35590f8e124d310",
-    "url": "/website-portfolio/static/css/main.98579afe.chunk.css"
+    "revision": "3453ac761ce3ec6cc7b0",
+    "url": "/website-portfolio/static/css/main.938ee617.chunk.css"
   },
   {
-    "revision": "bb91e35590f8e124d310",
-    "url": "/website-portfolio/static/js/main.fa2249fa.chunk.js"
+    "revision": "3453ac761ce3ec6cc7b0",
+    "url": "/website-portfolio/static/js/main.af4cb957.chunk.js"
   },
   {
     "revision": "c84d5f51ad173ed9c982",
     "url": "/website-portfolio/static/js/runtime~main.2451c7bc.js"
   },
   {
-    "revision": "0fc64e574ce66119804c",
-    "url": "/website-portfolio/static/js/2.fbd19b1c.chunk.js"
+    "revision": "6b3a9cc312b024a1935f",
+    "url": "/website-portfolio/static/js/2.ef282720.chunk.js"
   },
   {
     "revision": "b94469aae72e1de6ddc71637e7c622c0",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/website-portfolio/static/media/mongoDB.a7284869.jpg"
   },
   {
-    "revision": "2ff3a2db4e9ab99294edf6aa9ac163f6",
+    "revision": "3c7343c866584c1bae66c7478b86b1e0",
     "url": "/website-portfolio/index.html"
   }
 ];
