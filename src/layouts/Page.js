@@ -17,7 +17,7 @@ const Page = () => {
           component={Projects}
         />
         <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
-        <Route component={ErrorPages} />
+        <Route path={process.env.PUBLIC_URL + " "} component={ErrorPages} />
       </Switch>
     </>
   );
