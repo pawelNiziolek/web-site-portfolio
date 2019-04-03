@@ -1,4 +1,4 @@
-# Project Name
+# My portfolio
 
 Paweł Niziołek Portfolio (ReactJS, create-react-app, React Router, css, html)
 
