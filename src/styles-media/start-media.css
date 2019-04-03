@@ -150,7 +150,6 @@
   }
 }
 
-
 @media (max-width:1024px) and (orientation:portrait) {
   .wrap-start {
     perspective: 1000px;
