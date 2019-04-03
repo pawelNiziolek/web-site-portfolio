@@ -57,7 +57,7 @@
   width: 70%;
   height: 80%;
   transform: translate(-50%, -50%);
-  animation: spin 0s;
+  animation: none;
 }
 
 .circle.active-now {
