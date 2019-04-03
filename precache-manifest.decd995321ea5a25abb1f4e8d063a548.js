@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "fe34f3a33c65595808b0",
-    "url": "/website-portfolio/static/css/main.4692d1a2.chunk.css"
+    "revision": "1e99d51e9487462bcaa4",
+    "url": "/website-portfolio/static/css/main.59ff8442.chunk.css"
   },
   {
-    "revision": "fe34f3a33c65595808b0",
+    "revision": "1e99d51e9487462bcaa4",
     "url": "/website-portfolio/static/js/main.bd844516.chunk.js"
   },
   {
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/website-portfolio/static/media/mongoDB.a7284869.jpg"
   },
   {
-    "revision": "723fca83dd17637d344c68308e0a0252",
+    "revision": "a74e8bbf96128e87eed57bc1ebc107de",
     "url": "/website-portfolio/index.html"
   }
 ];
