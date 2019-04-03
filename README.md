@@ -1,6 +1,6 @@
 # Project Name
 
-> Here goes your awesome project description!
+Paweł Niziołek Portfolio (ReactJS, create-react-app, React Router, css, html)
 
 ## Table of contents
 
@@ -14,7 +14,7 @@
 
 ## General info
 
-Add more general information about project. What the purpose of the project is? Motivation?
+My personal portfolio and my first SPA project made using ReactJS.
 
 ## Screenshots
 
@@ -22,9 +22,11 @@ Add more general information about project. What the purpose of the project is? 
 
 ## Technologies
 
-- React: 16.8.3
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- React: version 16.8.3
+- create-react-app
+- react-router-dom: 4.3.1
+- HTML
+- CSS
 
 ## Setup
 

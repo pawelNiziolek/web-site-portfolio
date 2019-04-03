@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Nav from "../layouts/Nav";
 import Page from "../layouts/Page";
 import Footer from "../layouts/Footer";
-// import { BrowserRouter as Router } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
 import "../styles/App.css";
 
@@ -11,6 +10,7 @@ class App extends Component {
     const allowTransition = window.confirm(message);
     callback(allowTransition);
   }
+
   render() {
     return (
       <HashRouter getUserConfirmation={this.getConfirmation}>
