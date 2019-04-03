@@ -18,7 +18,7 @@ My personal portfolio and my first SPA project made using ReactJS.
 
 ## Screenshots
 
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./images/screenshot-one.png) (./images/screenshot-two.png)
 
 ## Technologies
 
