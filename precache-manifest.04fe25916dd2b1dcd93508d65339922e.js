@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/website-portfolio/static/media/mongoDB.a7284869.jpg"
   },
   {
-    "revision": "31d2844945bf92e3345bc29dea083418",
+    "revision": "b401fb228eda040d0544f7d69ea7049f",
     "url": "/website-portfolio/index.html"
   }
 ];
