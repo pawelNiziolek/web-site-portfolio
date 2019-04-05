@@ -40,7 +40,6 @@ const ContactShadow = props => {
           >
             https://www.linkedin.com/in/pawel-niziolek/
           </a>
-          .
         </span>
       </div>
     </div>
