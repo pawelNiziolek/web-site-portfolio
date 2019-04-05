@@ -28,7 +28,7 @@ const ContactShadow = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/pawelNiziolek
+            github.com/pawelNiziolek
           </a>
         </span>
         <p>linkedIn: </p>
@@ -38,7 +38,7 @@ const ContactShadow = props => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.linkedin.com/in/pawel-niziolek/
+            linkedin.com/in/pawel-niziolek
           </a>
         </span>
       </div>
