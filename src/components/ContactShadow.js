@@ -31,7 +31,17 @@ const ContactShadow = props => {
             https://github.com/pawelNiziolek
           </a>
         </span>
-        <p>linkedIn: </p> <span>Lorem ipsum dolor sit amet.</span>
+        <p>linkedIn: </p>
+        <span>
+          <a
+            href="https://www.linkedin.com/in/pawel-niziolek/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.linkedin.com/in/pawel-niziolek/
+          </a>
+          .
+        </span>
       </div>
     </div>
   );
