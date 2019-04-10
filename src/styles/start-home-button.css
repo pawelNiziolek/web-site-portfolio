@@ -1,0 +1,58 @@
+.chose-tech {
+  perspective: 800px;
+  display: flex;
+  justify-content: space-around;
+  margin: 2% auto;
+  flex-basis: 10vh;
+  width: 90%;
+  animation: showBtn 1.6s linear;
+}
+
+.chose-tech button {
+  width: 30%;
+  height: 75%;
+  padding: 10px;
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 22px;
+  letter-spacing: .6px;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow .3s;
+  animation: showBtn 1.6s linear;
+  transform-style: preserve-3d;
+  outline: none;
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 0;
+    height: 2px;
+    font-size: 0px;
+  }
+
+  80% {
+    opacity: 0;
+    height: 2px;
+    font-size: 0px;
+  }
+}
+
+.chose-tech button.now {
+  background-color: rgba(255, 255, 255, 0.082);
+  box-shadow: 10px 10px 20px 3px black;
+}
+
+.chose-tech button.now:hover {
+  box-shadow: 10px -10px 20px 3px black;
+}
+
+.chose-tech button.future {
+  background-color: rgba(0, 0, 0, 0.726);
+  box-shadow: -10px 10px 20px 3px black;
+}
+
+.chose-tech button.future:hover {
+  box-shadow: -10px -10px 20px 3px black;
+}
