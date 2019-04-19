@@ -39,7 +39,7 @@ class Projects extends Component {
         id: 4,
         title: "four",
         text:
-          "Slot machine - popularna gra jednoręki bandyta. (html, css, JavaScript(OOP))",
+          "Slot machine - popularna gra jednoręki bandyta. (html, css, JavaScript(OOP)) (PC)",
         titleLive: "https://pawelniziolek.github.io/slot-machine/",
         titleGit: "https://github.com/pawelNiziolek/slot-machine",
         active: false
@@ -47,7 +47,7 @@ class Projects extends Component {
       {
         id: 5,
         title: "five",
-        text: "Lista zadań - aplikacja to-do (html, css, JavaScript).",
+        text: "Lista zadań - aplikacja to-do (html, css, JavaScript) (PC).",
         titleLive:
           "https://pawelniziolek.github.io/another-to-do-list-in-JS/index.html",
         titleGit: "https://github.com/pawelNiziolek/another-to-do-list-in-JS",
