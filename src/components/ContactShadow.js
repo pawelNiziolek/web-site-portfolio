@@ -20,7 +20,11 @@ const ContactShadow = props => {
       </p>
       <div className="s-wall" style={{ transform: style3d }}>
         <p>email: </p>
-        <span><a href  ="mailto:pawel.r.niziolek@gmail.com">pawel.r.niziolek@gmail.com</a></span>
+        <span>
+          <a href="mailto:pawel.r.niziolek@gmail.com">
+            pawel.r.niziolek@gmail.com
+          </a>
+        </span>
         <p>gitHub: </p>
         <span>
           <a

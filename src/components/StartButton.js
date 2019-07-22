@@ -18,7 +18,7 @@ const StartButton = props => {
         className="future"
         onClick={showFuture}
       >
-        {future ? "Pokaż wszystkie" : <p>Technologie które chcę poznać</p>}
+        {future ? "Pokaż wszystkie" : "Technologie które chcę poznać"}
       </button>
     </div>
   );
