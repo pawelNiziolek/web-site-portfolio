@@ -3,6 +3,7 @@ import Nav from "../layouts/Nav";
 import Page from "../layouts/Page";
 import Footer from "../layouts/Footer";
 import { HashRouter } from "react-router-dom";
+import ScrollToTop from "react-router-scroll-top";
 import "../styles/App.css";
 
 class App extends Component {
@@ -14,11 +15,13 @@ class App extends Component {
   render() {
     return (
       <HashRouter getUserConfirmation={this.getConfirmation}>
-        <div className="wrap-all">
-          <header>{<Nav />}</header>
-          <main>{<Page />}</main>
-          <footer>{<Footer />}</footer>
-        </div>
+        <ScrollToTop>
+          <div className="wrap-all">
+            <header>{<Nav />}</header>
+            <main>{<Page />}</main>
+            <footer>{<Footer />}</footer>
+          </div>
+        </ScrollToTop>
       </HashRouter>
     );
   }
